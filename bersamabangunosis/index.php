@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-        <title>OSIS SMK CINTA KASIH TZU CHI | Home Page</title>
+        <title>0SIS SMK CINTA KASIH TZU CHI | Home Page</title>
     
         
         <!-- space -->
