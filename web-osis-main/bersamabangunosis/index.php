@@ -7,6 +7,7 @@
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/images/oska.png" />
     
         <title>OSIS SMK CINTA KASIH TZU CHI | Home Page</title>
     
@@ -50,13 +51,16 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item @@about__active">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="#top  ">About</a>
               </li>
-              <li class="nav-item @@courses__active">
-                <a class="nav-link" href="courses.html">Courses</a>
+              <li class="nav-item @@kegiatan__active">
+                <a class="nav-link" href="#kegiatan">Kegiatan</a>
               </li>
               <li class="nav-item @@contact__active">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="#proker">Program Kerja</a>
+              </li>
+              <li class="nav-item @@anggota__active">
+                <a class="nav-link" href="#keanggotaan">Keanggotaan</a>
               </li>
             </ul>
     
@@ -94,7 +98,7 @@
                                     <div class="banner-info-bg">
                                         <h5>SMK HEBAT!</h5>
                                         <p class="mt-4 pr-lg-4">Takdir biarlah takdir, kita bertugas untuk berusaha sampai bisa!</p>
-                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="about.html">Know us more!</a>
+                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="#top">Know us more!</a>
                                     </div>
                                 </div>
                             </div>
@@ -165,14 +169,10 @@
                   <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                     <h6>Welcome to the official site of</h6>
                     <h2>OSIS SMK <br>Cinta Kasih Tzu Chi</h2>
-                    <form id="search" action="#" method="GET">
-                      <fieldset>
-                        <input type="address" name="address" class="email" placeholder="Your website URL..." autocomplete="on" required>
-                      </fieldset>
-                      <fieldset>
-                        <button type="submit" class="main-button">Analyze Site</button>
-                      </fieldset>
-                    </form>
+                    <p>OSIS SMK Cinta Kasih Tzu Chi merupakan sebuah wadah yang memfasilitasi para siswa SMK Cinta Kasih Tzu Chi untuk belajar berorganisasi dan 
+                      bekerja sama sesuai tugasnya masing-masing sebagai perwakilan siswa demi kepentingan warga sekolah.</p>
+                      <p>Para pengurus OSIS sendiri dipilih berdasarkan rangkaian seleksi yang dilakukan sebelumnya supaya terpilih siswa-siswi yang serius dan memiliki 
+                      niat dalam organisasi. Untuk keanggotaan OSIS SMK Cinta Kasih Tzu Chi bisa kalian lihat juga <a href="#keanggotaan">disini</a></p>
                   </div>
                 </div>
                 <div class="col-lg-6">
@@ -187,6 +187,7 @@
       </div>
     
     <section class="w3l-courses">
+      <div id="kegiatan">
         <div class="blog pb-5" id="courses">
             <div class="container py-lg-5 py-md-4 py-2">
                 <h5 class="title-small text-center mb-1">Kegiatan OSIS SMK CKTC</h5>
@@ -345,28 +346,24 @@
                 </div>
                 <div class="mt-5 text-more">
                     <p class="pt-md-3 sample text-center">
-                        Control your personal preference settings to get notified about appropriate courses
-                        <a href="courses.html">View All Courses <span class="pl-2 fa fa-long-arrow-right"></span></a>
+                        Penasaran dengan semua kegiatan yang diadakan SMK Cinta Kasih Tzu Chi? Langsung aja
+                        <a href="courses.html">Lihat Semua Kegiatan<span class="pl-2 fa fa-long-arrow-right"></span></a>
                     </p>
                 </div>
             </div>
         </div>
+      </div>
     </section>
-    <section class="w3l-features py-5" id="facilities">
+    <section class="w3l-features py-5" id="proker">
         <div class="call-w3 py-lg-5 py-md-4 py-2">
             <div class="container">
                 <div class="row main-cont-wthree-2">
                     <div class="col-lg-5 feature-grid-left">
                         <h5 class="title-small mb-1">Program OSIS SMK Cinta Kasih Tzu Chi </h5>
                         <h3 class="title-big mb-4">Program Kerja </h3>
-                        <p class="text-para">Curabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed,
-                            lacinia est.
-                            Quisque ut lectus consequat, venenatis eros et, commodo risus. Nullam sit amet laoreet elit.
-                            Suspendisse non magna a velit efficitur. </p>
-                        <p class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ab qui impedit, libero illo
-                            quia sequi quibusdam iure. Error minus quod reprehenderit quae dolor velit soluta animi
-                            voluptate dicta enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, provident!</p>
-                        <a href="#url" class="btn btn-primary btn-style mt-md-5 mt-4">Discover More</a>
+                        <p class="text-para">Program Kerja OSIS SMK Cinta Kasih Tzu Chi dirancang dan dibentuk oleh pengurus OSIS dengan tujuan memaksimalkan potensi dan kreativitas para siswa agar bisa berprestasi dan meningkatkan kepercayaan diri.</p>
+                        <p class="mt-3">Program Kerja yang sudah terlaksana ataupun yang masih dalam tahap perancangan hadir dalam beberapa bentuk. Seperti kegiatan, diskusi dan postingan media sosial, dan masih banyak lainnya.</p>
+                        <a href="#url" class="btn btn-primary btn-style mt-md-5 mt-4">Lihat Kegiatan SMK Cinta Kasih Tzu Chi</a>
                     </div>
                     <div class="col-lg-7 feature-grid-right mt-lg-0 mt-5">
                         <div class="call-grids-w3 d-grid">
@@ -410,22 +407,16 @@
     </div>
     <!-- //middle -->
     <section class="w3l-team py-5" id="team">
-        <div class="call-w3 py-lg-5 py-md-4">
+        <div class="call-w3 py-lg-5 py-md-4" id="keanggotaan">
             <div class="container">
                 <div class="row main-cont-wthree-2">
                     <div class="col-lg-5 feature-grid-left">
                         <h5 class="title-small mb-1">Anggota OSIS SMK Cinta Kasih Tzu Chi</h5>
                         <h3 class="title-big mb-4">Meet Our Members</h3>
-                        <p class="text-para">Curabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed,
-                            lacinia est.
-                            Quisque ut lectus consequat, venenatis eros et, commodo risus. Nullam sit amet laoreet elit.
-                            Suspendisse non magna a velit efficitur. </p>
-                        <p class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ab qui impedit,
-                            libero illo
-                            quia sequi quibusdam iure. Error minus quod reprehenderit quae dolor velit soluta animi
-                            voluptate dicta enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, provident!
+                        <p class="text-para">Pengurus OSIS SMK Cinta Kasih Tzu Chi terbagi kedalam beberapa divisi dengan tugas yang berbeda. Berikut ini beberapa divisi yang ada di OSIS SMK Cinta Kasih Tzu Chi.</p>
+                        <p class="mt-3">
                         </p>
-                        <a href="#url" class="btn btn-primary btn-style mt-md-5 mt-4">Discover More</a>
+                        <a href="#kegiatan" class="btn btn-primary btn-style mt-md-5 mt-4">Lihat lebih lanjut</a>
                     </div>
                     <div class="col-lg-7 feature-grid-right mt-lg-0 mt-5">
                         <div class="row">
@@ -471,53 +462,46 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 mt-lg-4 mt-3">
-                                <div class="box16">
-                                    <a href="#url"><img src="assets/images/team3.jpg" alt="" class="img-fluid radius-image" /></a>
-                                    <div class="box-content">
-                                        <h3 class="title"><a href="#url">Isabella</a></h3>
-                                        <span class="post">Teacher</a></span>
-                                        <ul class="social">
-                                            <li>
-                                                <a href="#" class="facebook">
-                                                    <span class="fa fa-facebook-f"></span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="twitter">
-                                                    <span class="fa fa-twitter"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 mt-lg-4 mt-3">
-                                <div class="box16">
-                                    <a href="#url"><img src="assets/images/team4.jpg" alt="" class="img-fluid radius-image" /></a>
-                                    <div class="box-content">
-                                        <h3 class="title"><a href="#url">Elizabeth</a></h3>
-                                        <span class="post">Teacher</a></span>
-                                        <ul class="social">
-                                            <li>
-                                                <a href="#" class="facebook">
-                                                    <span class="fa fa-facebook-f"></span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="twitter">
-                                                    <span class="fa fa-twitter"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            
+                            
                         </div>
                     </div>
                 </div>
             </div>
     </section>
+    <div>
+    <section class="w3l-team py-5" id="team">
+    <div class="container">
+      <div class="row row-cols-4">
+        <?php for($i=0;$i<=6;$i++) :?>
+        <div class="col-sm-6 mt-lg-4" style="max-width:300px;margin-top:20px">
+          <div class="box16">
+            <a href="#url"><img src="assets/images/team1.jpg" alt="" class="img-fluid radius-image" /></a>
+            <div class="box-content">
+                <h3 class="title"><a href="#url">James</a></h3>
+                <span class="post">Director</span>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                            <span class="fa fa-facebook-f"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        
+    <?php endfor;?>
+      </div>
+    </div>
+    </section>
+        </div>
+    
     <!-- testimonials -->
     
     
@@ -531,6 +515,8 @@
                 <p>Kami terbuka dengan segala kritik dan saran. Organisasi ini akan berkembang lebih jauh lagi jika ide brilian kalian bisa kami ketahui.</p>
                 <div class="phone-info">
                   <h4><span><i class="fa fa-phone"></i> <a href="#">010-020-0340</a></span></h4>
+                  <h4 style="margin-top:2%;"><span><i class="fa fa-google"></i> <a href="#">oskacktc@cintakasih.sch.id</a></span></h4>
+                  <h4 style="margin-top:2%;"><span><i class="fa">Line</i> <a href="#">< idLine ></a></span></h4>
                 </div>
               </div>
             </div>
