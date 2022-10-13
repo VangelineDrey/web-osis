@@ -11,13 +11,13 @@ include 'admin/functions.php';
 
       if(contact($_POST) > 0){
           echo "<script>
-    alert('Data berhasil diubah');
+    alert('Message Sent!');
     document.location.href='index.php';
           </script>
           ";
           
       } else {echo "<script>
-          alert('Data gagal diubah(fileubah)');
+          alert('Failed to send the message! Try again later..');
           document.location.href='index.php';
                     </script>;";
     }
@@ -145,7 +145,7 @@ include 'admin/functions.php';
                                     <div class="banner-info-bg">
                                         <h5>SMK BISA!</h5>
                                         <p class="mt-4 pr-lg-4">Kita Tak Akan Tau Sebelum Mencoba</p>
-                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="about.html">Know us more!</a>
+                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="#about">Know us more!</a>
                                     </div>
                                 </div>
                             </div>
@@ -562,7 +562,7 @@ include 'admin/functions.php';
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <input type="submit" name="submit "id="form-submit" class="main-button ">Send Message
+                      <input type="submit" name="submit" class="main-button " style="background-color:#2BD4FE;color:white;"/>
                     </fieldset>
                   </div>
                 </div>
