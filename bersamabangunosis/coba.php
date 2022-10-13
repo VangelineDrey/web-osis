@@ -41,11 +41,8 @@ document.location.href='index.php';
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <input type="submit" name="submit "id="form-submit" class="main-button ">Send Message
+                      <input type="submit" name="submit" />
                     </fieldset>
                   </div>
-                </div>
-                <div class="contact-dec">
-                  <img src="assets-space/images/contact-decoration.png" alt="">
                 </div>
               </form>

@@ -16,9 +16,9 @@ function contact($data){
     global $conn;
 
     $nama= htmlspecialchars($data["name"]);
-    $email= htmlspecialchars($data["title"]);
+    $title= htmlspecialchars($data["title"]);
     $email= htmlspecialchars($data["email"]);
-    $pesan= htmlspecialchars($data["message"]);
+    $message= htmlspecialchars($data["message"]);
 
     $query= "INSERT INTO guests
      VALUES ('','$nama','$email','$title','$message')
@@ -108,33 +108,33 @@ function upload($img){
         return mysqli_affected_rows($conn);
         }
 
-        function ubah1($data){
-            global $conn;
-            $id=$data["id"]; 
-        $author= htmlspecialchars($data["author"]);
-        $title= htmlspecialchars($data["title"]);
-        $id_artinfo = htmlspecialchars($data["id_artinfo"]);
-        $par1= $data["par1"];
-        $par2= $data["par2"];
-        $par3= $data["par3"];
-        $par4= $data["par4"];
-    $img1lama = htmlspecialchars($data["img1lama"]);
-    $img2lama = htmlspecialchars($data["img2lama"]);
-    $img3lama = htmlspecialchars($data["img3lama"]);
+    //     function ubah1($data){
+    //         global $conn;
+    //         $id=$data["id"]; 
+    //     $author= htmlspecialchars($data["author"]);
+    //     $title= htmlspecialchars($data["title"]);
+    //     $id_artinfo = htmlspecialchars($data["id_artinfo"]);
+    //     $par1= $data["par1"];
+    //     $par2= $data["par2"];
+    //     $par3= $data["par3"];
+    //     $par4= $data["par4"];
+    // $img1lama = htmlspecialchars($data["img1lama"]);
+    // $img2lama = htmlspecialchars($data["img2lama"]);
+    // $img3lama = htmlspecialchars($data["img3lama"]);
 
-    if($_FILES['img1']['error'] === 4){
-        $img1=$img1lama;
-    } else {
-    $img1= upload('img1');
-    }
+    // if($_FILES['img1']['error'] === 4){
+    //     $img1=$img1lama;
+    // } else {
+    // $img1= upload('img1');
+    // }
     
-        $query= "UPDATE fotovideo SET id_artinfo='$id_artinfo',author='$author',title='$title',par1='$par1',par2='$par2',par3='$par3'
-        ,par4='$par4', img1='$img1', img2='$img2', img3='$img3'
-         WHERE id_tulisan= $id
-         ";
-         mysqli_query($conn,$query);
+    //     $query= "UPDATE fotovideo SET id_artinfo='$id_artinfo',author='$author',title='$title',par1='$par1',par2='$par2',par3='$par3'
+    //     ,par4='$par4', img1='$img1', img2='$img2', img3='$img3'
+    //      WHERE id_tulisan= $id
+    //      ";
+    //      mysqli_query($conn,$query);
     
-        return mysqli_affected_rows($conn);
-        }      
+    //     return mysqli_affected_rows($conn);
+    //     }      
 
 ?>
