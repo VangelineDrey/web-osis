@@ -364,7 +364,7 @@ include 'admin/functions.php';
                 <div class="mt-5 text-more">
                     <p class="pt-md-3 sample text-center">
                         Penasaran dengan semua kegiatan yang diadakan SMK Cinta Kasih Tzu Chi? Langsung aja
-                        <a href="courses.html">Lihat Semua Kegiatan<span class="pl-2 fa fa-long-arrow-right"></span></a>
+                        <a href="https://smk.cintakasihtzuchi.sch.id/category/events/">Lihat Semua Kegiatan<span class="pl-2 fa fa-long-arrow-right"></span></a>
                     </p>
                 </div>
             </div>

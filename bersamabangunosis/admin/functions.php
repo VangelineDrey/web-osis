@@ -30,15 +30,16 @@ function contact($data){
     
 }
 
-function tambahani($data){
+function program($data){
     global $conn;
 
-    $nama= htmlspecialchars($data["nama"]);
-    $deskri= htmlspecialchars($data["deskri"]);
-    $gambar = upload('img1');
+    $nama= htmlspecialchars($data["name"]);
+    $link= htmlspecialchars($data["link"]);
+    $detail= htmlspecialchars($data["detail"]);
+    $gambar = upload("image");
 
-    $query= "INSERT INTO fotovideo
-     VALUES ('','$gambar','$deskri')
+    $query= "INSERT INTO proker
+     VALUES ('','$nama','$detail','$link','$gambar')
      ";
      mysqli_query($conn,$query);
 
@@ -46,18 +47,18 @@ function tambahani($data){
     
 }
 
-function upload($img){
-    $namafile=$_FILES[$img]['name'];
-    $sizefile=$_FILES[$img]['size'];
-    $error = $_FILES[$img]['error'];
-    $tmpname =$_FILES[$img]['tmp_name'];
+function upload($gambar){
+    $namafile=$_FILES[$gambar]['name'];
+    $sizefile=$_FILES[$gambar]['size'];
+    $error=$_FILES[$gambar]['error'];
+    $tmpname =$_FILES[$gambar]['tmp_name'];
 
     if($error===4){
         echo"<script>alert('Tidak menerima gambar');</script>";
         return true;
     }
 
-    $ekstgambarvalid=['jpg','jpeg','png','gif'];
+    $ekstgambarvalid=['jpg','jpeg','png','gif','JPEG'];
     $ekstgambar=explode('.',$namafile);
     $ekstgambar= strtolower(end($ekstgambar));
 
@@ -70,7 +71,7 @@ function upload($img){
         return false;
     }
     
-    $namafilebaru = uniqid();
+    $namafilebaru = 'programkerja'.uniqid();
     $namafilebaru .= '.';
     $namafilebaru .= $ekstgambar;
     

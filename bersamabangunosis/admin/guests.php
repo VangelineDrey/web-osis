@@ -20,12 +20,12 @@ $tamu = query("SELECT * FROM buku_tamu LIMIT $awaldata,$jumdthlm");
     <head>
         <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <title> Halaman Data Buku </title>
+        <title> Message Page </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body style="background-image: url('https://www.icegif.com/wp-content/uploads/cool-wallpapers-icegif-1.gif');">
 <?php require('navbar.html'); ?>
-    <span class="rainbow"> Data Buku </span>
+    <span class="rainbow"> Guests' Message </span>
     <br><br>
 
     <form action="" method="post">
