@@ -72,7 +72,7 @@ include 'admin/functions.php';
                 <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item @@about__active">
-                <a class="nav-link" href="#top  ">About</a>
+                <a class="nav-link" href="about.html  ">About</a>
               </li>
               <li class="nav-item @@kegiatan__active">
                 <a class="nav-link" href="#kegiatan">Kegiatan</a>
@@ -99,6 +99,21 @@ include 'admin/functions.php';
               <a href="#login" class="btn login mr-2"><span class="fa fa-user"></span> login</a>
             </div>
           </div>
+
+          <!-- toggle switch for light and dark theme -->
+      <div class="mobile-position">
+        <nav class="navigation">
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox">
+              <div class="mode-container py-1">
+                <i class="gg-sun"></i>
+                <i class="gg-moon"></i>
+              </div>
+            </label>
+          </div>
+        </nav>
+      </div>
           
         </nav>
       </div>
