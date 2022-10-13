@@ -51,7 +51,7 @@ include 'admin/functions.php';
         <nav class="navbar navbar-expand-lg navbar-dark stroke">
             <img src="assets/images/logooska.png" style="max-width: 75px;">
           <h1>
-            <a class="navbar-brand" href="index.html" style="font-size:0.6em;">
+            <a class="navbar-brand" href="index.php" style="font-size:0.6em;">
               OSIS SMK <span style="text-decoration: none;"><br>Cinta Kasih Tzu Chi</span></a>
           </h1>
           <!-- if logo is image enable this   
@@ -69,7 +69,7 @@ include 'admin/functions.php';
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mx-lg-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item @@about__active">
                 <a class="nav-link" href="#top  ">About</a>
