@@ -321,16 +321,6 @@ function upload($gambar){
                     mysqli_query($conn,"DELETE FROM anggota where id = $id");
                     return mysqli_affected_rows($conn);
                 }
-
-    
-
-    function hapus1($id){
-        global $conn;
-        mysqli_query($conn,"DELETE FROM fotovideo where id_foto = $id");
-    
-        return mysqli_affected_rows($conn);
-    }
-    
         
 
     //     function ubah1($data){
