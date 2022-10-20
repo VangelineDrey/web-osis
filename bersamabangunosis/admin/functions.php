@@ -244,9 +244,83 @@ function upload($gambar){
         
             function artikeldelete($id){
                 global $conn;
-                mysqli_query($conn,"DELETE FROM divisi where id = $id");
+                mysqli_query($conn,"DELETE FROM artikel where id = $id");
                 return mysqli_affected_rows($conn);
             }
+
+            function members($data){
+                global $conn;
+            
+                $nama= htmlspecialchars($data["name"]);
+                $divisi= htmlspecialchars($data["divisi"]);
+                $dob= htmlspecialchars($data["dob"]);
+                $words= htmlspecialchars($data["words"]);
+                $gambar = uploadm("image");
+            
+                $query= "INSERT INTO anggota
+                 VALUES ('','$nama','$divisi','$dob','$words','$gambar')
+                 ";
+                 mysqli_query($conn,$query);
+            
+                return mysqli_affected_rows($conn);
+                
+            }
+            
+            function uploadm($gambar){
+                $namafile=$_FILES[$gambar]['name'];
+                $sizefile=$_FILES[$gambar]['size'];
+                $error=$_FILES[$gambar]['error'];
+                $tmpname =$_FILES[$gambar]['tmp_name'];
+            
+                if($error===4){
+                    echo"<script>alert('Tidak menerima gambar');</script>";
+                    return true;
+                }
+            
+                $ekstgambarvalid=['jpg','jpeg','png','gif','JPEG'];
+                $ekstgambar=explode('.',$namafile);
+                $ekstgambar= strtolower(end($ekstgambar));
+            
+                if( !in_array($ekstgambar,$ekstgambarvalid)){
+                    echo"<script>alert('File Bukan gambar');</script>";
+                    return false;
+                }
+                if($sizefile >10000000){
+                    echo"<script>alert('Ukuran gambar terlalu besar');</script>";
+                    return false;
+                }
+                
+                $namafilebaru = 'members'.uniqid();
+                $namafilebaru .= '.';
+                $namafilebaru .= $ekstgambar;
+                
+                move_uploaded_file($tmpname,'images/'.$namafilebaru);
+                return $namafilebaru;
+            
+            }
+            
+                function anggotaedit($data){
+                    global $conn;
+                $id=$data["id"]; 
+                $nama= htmlspecialchars($data["name"]);
+                $divisi= htmlspecialchars($data["divisi"]);
+                $dob= htmlspecialchars($data["dob"]);
+                $words= htmlspecialchars($data["words"]);
+                $gambar = uploadm("image");
+            
+                $query= "UPDATE anggota SET name='$nama', divisi='$divisi', dob='$dob',words='$words',image='$gambar'
+                WHERE id= $id
+                ";
+                mysqli_query($conn,$query);
+            
+                return mysqli_affected_rows($conn);
+                }
+            
+                function anggotadelete($id){
+                    global $conn;
+                    mysqli_query($conn,"DELETE FROM anggota where id = $id");
+                    return mysqli_affected_rows($conn);
+                }
 
     
 
