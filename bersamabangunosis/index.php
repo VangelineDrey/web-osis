@@ -377,28 +377,28 @@ include 'admin/functions.php';
                         <h3 class="title-big mb-4">Program Kerja </h3>
                         <p class="text-para">Program Kerja OSIS SMK Cinta Kasih Tzu Chi dirancang dan dibentuk oleh pengurus OSIS dengan tujuan memaksimalkan potensi dan kreativitas para siswa agar bisa berprestasi dan meningkatkan kepercayaan diri.</p>
                         <p class="mt-3">Program Kerja yang sudah terlaksana ataupun yang masih dalam tahap perancangan hadir dalam beberapa bentuk. Seperti kegiatan, diskusi dan postingan media sosial, dan masih banyak lainnya.</p>
-                        <a href="#url" class="btn btn-primary btn-style mt-md-5 mt-4">Lihat Kegiatan SMK Cinta Kasih Tzu Chi</a>
+                        <a href="#kegiatan" class="btn btn-primary btn-style mt-md-5 mt-4">Lihat Kegiatan SMK Cinta Kasih Tzu Chi</a>
                     </div>
                     <div class="col-lg-7 feature-grid-right mt-lg-0 mt-5">
                         <div class="call-grids-w3 d-grid">
                             <div class="grids-1 box-wrap">
                                 <a href="#more" class="icon"><span class="fa fa-certificate"></span></a>
-                                <h4><a href="#feature" class="title-head">BIBEKA</a></h4>
+                                <h4><a href="https://www.youtube.com/channel/UCgiGPgwMVXUeYaapqxXjLzw" class="title-head">BIBEKA</a></h4>
                                 <p>Program podcast OSKA yang membahas mengenai topik yang fun dan insightfull.</p>
                             </div>
                             <div class="grids-1 box-wrap">
                                 <a href="#more" class="icon"><span class="fa fa-book"></span></a>
-                                <h4><a href="#feature" class="title-head">IGSTS</a></h4>
+                                <h4><a href="https://www.instagram.com/osis_smktzuchi/reels/?hl=id" class="title-head">IGSTS</a></h4>
                                 <p>Program sharing pengalaman siswa/i SMK Cinta Kasih Tzu Chi, untuk bisa saling bercerita & memotivasi.</p>
                             </div>
                             <div class="grids-1 box-wrap">
                                 <a href="#more" class="icon"><span class="fa fa-trophy"></span></a>
-                                <h4><a href="#feature" class="title-head">KWU OSKA</a></h4>
-                                <p>Penjualan snack vegetarian.</p>
+                                <h4><a href="https://www.instagram.com/stories/highlights/18074856229288907/?hl=id" class="title-head">KWU OSKA</a></h4>
+                                <p>Penjualan snack vegetarian yang murah meriah.</p>
                             </div>
                             <div class="grids-1 box-wrap">
                                 <a href="#more" class="icon"><span class="fa fa-graduation-cap"></span></a>
-                                <h4><a href="#feature" class="title-head">Instagram</a></h4>
+                                <h4><a href="https://www.instagram.com/osis_smktzuchi/?hl=ids" class="title-head">Instagram</a></h4>
                                 <p>Berbagi informasi, poster hari besar & keagamaan, serta birthday reminder.</p>
                             </div>
                         </div>
@@ -597,7 +597,7 @@ include 'admin/functions.php';
         <div class="container">
           <div class="row">
             <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-              <p>© Copyright 2022 Kelompok 5 | All Rights Reserved. 
+              <p>© Copyright SMK Cinta Kasih Tzu Chi |<a href="#"> Kelompok 5</a> | All Rights Reserved. 
             </div>
           </div>
         </div>
