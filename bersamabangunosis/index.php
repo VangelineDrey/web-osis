@@ -229,47 +229,29 @@ include 'admin/functions.php';
                         <div class="card">
                             <div class="card-header p-0 position-relative">
                                 <a href="#course-single" class="zoom d-block">
-                                    <img class="card-img-bottom d-block" src="assets/images/c1.jpg"
+                                    <img class="card-img-bottom d-block" src="assets/images/upacara.jpeg"
                                         alt="Card image cap">
                                 </a>
                                 <div class="post-pos">
-                                    <a href="#reciepe" class="receipe blue">Beginner</a>
+
                                 </div>
                             </div>
                             <div class="card-body course-details">
                                 <div class="price-review d-flex justify-content-between mb-1align-items-center">
-                                    <p>$00.00</p>
-                                    <ul class="rating-star">
-                                        <li><span class="fa fa-star"></span></li>
-                                        <li><span class="fa fa-star"></span></li>
-                                        <li><span class="fa fa-star"></span></li>
-                                        <li><span class="fa fa-star"></span></li>
-                                        <li><span class="fa fa-star-o"></span></li>
-                                    </ul>
                                 </div>
-                                <a href="#course-single" class="course-desc">Open Programming Courses for everyone : Python
+                                <a href="https://smk.cintakasihtzuchi.sch.id/upacara-hut-ri-smk-tzu-chi-2022/" class="course-desc">Upacara HUT RI Sekolah Cinta Kasih Tzu Chi 2022
                                 </a>
-                                <div class="course-meta mt-4">
-                                    <div class="meta-item course-lesson">
-                                        <span class="fa fa-clock-o"></span>
-                                        <span class="meta-value"> 20 hrs </span>
-                                    </div>
-                                    <div class="meta-item course-">
-                                        <span class="fa fa-user-o"></span>
-                                        <span class="meta-value"> 50 </span>
-                                    </div>
-                                </div>
                             </div>
                             <div class="card-footer">
                                 <div class="author align-items-center">
                                     <img src="assets/images/a1.jpg" alt="" class="img-fluid rounded-circle">
                                     <ul class="blog-meta">
                                         <li>
-                                            <span class="meta-value mx-1">by</span> <a href="#author"> Si Ganteng</a>
+                                            <span class="meta-value mx-1">by</span> <a href="#author"> Rebecca</a>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <span class="meta-value mx-1">in</span> <a href="#author"> Programing</a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -280,28 +262,28 @@ include 'admin/functions.php';
                         <div class="card">
                             <div class="card-header p-0 position-relative">
                                 <a href="#course-single" class="zoom d-block">
-                                    <img class="card-img-bottom d-block" src="assets/images/c5.jpg"
+                                    <img class="card-img-bottom d-block" src="assets/images/hut-ri.jpeg"
                                         alt="Card image cap">
                                 </a>
-                                <div class="course-price-badge"> Free</div>
+                                <!-- <div class="course-price-badge"> Free</div>
                                 <div class="post-pos">
                                     <a href="#reciepe" class="receipe blue">Beginner</a>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="card-body course-details">
                                 <div class="price-review d-flex justify-content-between mb-1align-items-center">
-                                    <p>$00.00</p>
+                                    <!-- <p>$00.00</p>
                                     <ul class="rating-star">
                                         <li><span class="fa fa-star"></span></li>
                                         <li><span class="fa fa-star"></span></li>
                                         <li><span class="fa fa-star"></span></li>
                                         <li><span class="fa fa-star"></span></li>
                                         <li><span class="fa fa-star-o"></span></li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
-                                <a href="#course-single" class="course-desc">Learning to Write as a clean and Professional
+                                <a href="https://smk.cintakasihtzuchi.sch.id/lomba-17-agustus-smk-tzu-chi-2022/" class="course-desc">Lomba 17 Agustus-An SMK Cinta Kasih Tzu Chi 2022
                                     Author</a>
-                                <div class="course-meta mt-4">
+                                <!-- <div class="course-meta mt-4">
                                     <div class="meta-item course-lesson">
                                         <span class="fa fa-clock-o"></span>
                                         <span class="meta-value"> 20 hrs </span>
@@ -310,18 +292,18 @@ include 'admin/functions.php';
                                         <span class="fa fa-user-o"></span>
                                         <span class="meta-value"> 50 </span>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="card-footer">
                                 <div class="author align-items-center">
                                     <img src="assets/images/a2.jpg" alt="" class="img-fluid rounded-circle">
                                     <ul class="blog-meta">
                                         <li>
-                                            <span class="meta-value mx-1">by</span> <a href="#author"> Si Tampan</a>
+                                            <span class="meta-value mx-1">by</span> <a href="#author"> Rebecca</a>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <span class="meta-value mx-1">in</span> <a href="#author"> Teaching</a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -332,24 +314,24 @@ include 'admin/functions.php';
                         <div class="card">
                             <div class="card-header p-0 position-relative">
                                 <a href="#course-single" class="zoom d-block">
-                                    <img class="card-img-bottom d-block" src="assets/images/c6.jpg"
+                                    <img class="card-img-bottom d-block" src="assets/images/hardiknas.jpeg"
                                         alt="Card image cap">
                                 </a>
-                                <div class="course-price-badge-new"> New</div>
+                                <!-- <div class="course-price-badge-new"> New</div> -->
                             </div>
                             <div class="card-body course-details">
                                 <div class="price-review d-flex justify-content-between mb-1align-items-center">
-                                    <p>$00.00</p>
+                                    <!-- <p>$00.00</p>
                                     <ul class="rating-star">
                                         <li><span class="fa fa-star"></span></li>
                                         <li><span class="fa fa-star"></span></li>
                                         <li><span class="fa fa-star"></span></li>
                                         <li><span class="fa fa-star"></span></li>
                                         <li><span class="fa fa-star-o"></span></li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
-                                <a href="#course-single" class="course-desc">Learn Master JQuery in a Short Period of Time</a>
-                                <div class="course-meta mt-4">
+                                <a href="https://smk.cintakasihtzuchi.sch.id/hardiknas-smk-cinta-kasih-tzu-chi-2022/" class="course-desc">Hari Pendidikan Nasional SMK Cinta Kasih Tzu Chi 2022</a>
+                                <!-- <div class="course-meta mt-4">
                                     <div class="meta-item course-lesson">
                                         <span class="fa fa-clock-o"></span>
                                         <span class="meta-value"> 20 hrs </span>
@@ -358,7 +340,7 @@ include 'admin/functions.php';
                                         <span class="fa fa-user-o"></span>
                                         <span class="meta-value"> 50 </span>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="card-footer">
                                 <div class="author align-items-center">
@@ -367,9 +349,9 @@ include 'admin/functions.php';
                                         <li>
                                             <span class="meta-value mx-1">by</span> <a href="#author"> Si Jelek</a>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <span class="meta-value mx-1">in</span> <a href="#author"> Programing</a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
