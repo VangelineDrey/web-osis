@@ -401,23 +401,23 @@ include 'admin/functions.php';
                         <div class="call-grids-w3 d-grid">
                             <div class="grids-1 box-wrap">
                                 <a href="#more" class="icon"><span class="fa fa-certificate"></span></a>
-                                <h4><a href="#feature" class="title-head">Global Certificate</a></h4>
-                                <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.</p>
+                                <h4><a href="#feature" class="title-head">BIBEKA</a></h4>
+                                <p>Program podcast OSKA yang membahas mengenai topik yang fun dan insightfull.</p>
                             </div>
                             <div class="grids-1 box-wrap">
                                 <a href="#more" class="icon"><span class="fa fa-book"></span></a>
-                                <h4><a href="#feature" class="title-head">Books & Library</a></h4>
-                                <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet laoreet.</p>
+                                <h4><a href="#feature" class="title-head">IGSTS</a></h4>
+                                <p>Program sharing pengalaman siswa/i SMK Cinta Kasih Tzu Chi, untuk bisa saling bercerita & memotivasi.</p>
                             </div>
                             <div class="grids-1 box-wrap">
                                 <a href="#more" class="icon"><span class="fa fa-trophy"></span></a>
-                                <h4><a href="#feature" class="title-head">Scholarship</a></h4>
-                                <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet laoreet.</p>
+                                <h4><a href="#feature" class="title-head">KWU OSKA</a></h4>
+                                <p>Penjualan snack vegetarian.</p>
                             </div>
                             <div class="grids-1 box-wrap">
                                 <a href="#more" class="icon"><span class="fa fa-graduation-cap"></span></a>
-                                <h4><a href="#feature" class="title-head">Alumni Support</a></h4>
-                                <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet laoreet.</p>
+                                <h4><a href="#feature" class="title-head">Instagram</a></h4>
+                                <p>Berbagi informasi, poster hari besar & keagamaan, serta birthday reminder.</p>
                             </div>
                         </div>
                     </div>
@@ -454,10 +454,10 @@ include 'admin/functions.php';
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="box16">
-                                    <a href="#url"><img src="assets/images/team1.jpg" alt="" class="img-fluid radius-image" /></a>
+                                    <a href="#url"><img src="assets/images/pincen.png" alt="" class="img-fluid radius-image" /></a>
                                     <div class="box-content">
-                                        <h3 class="title"><a href="#url">James</a></h3>
-                                        <span class="post">Director</span>
+                                        <h3 class="title"><a href="#url">Vincent Sutanto</a></h3>
+                                        <span class="post">Ketua OSIS</span>
                                         <ul class="social">
                                             <li>
                                                 <a href="#" class="facebook">
@@ -475,10 +475,10 @@ include 'admin/functions.php';
                             </div>
                             <div class="col-sm-6 mt-sm-0 mt-3">
                                 <div class="box16">
-                                    <a href="#url"><img src="assets/images/team2.jpg" alt="" class="img-fluid radius-image" /></a>
+                                    <a href="#url"><img src="assets/images/stefani.png" alt="" class="img-fluid radius-image" /></a>
                                     <div class="box-content">
-                                        <h3 class="title"><a href="#url">Victoria</a></h3>
-                                        <span class="post">Managing Director</span>
+                                        <h3 class="title"><a href="#url">Stefanny</a></h3>
+                                        <span class="post">Wakil Ketua OSIS</span>
                                         <ul class="social">
                                             <li>
                                                 <a href="#" class="facebook">
@@ -505,13 +505,34 @@ include 'admin/functions.php';
     <section class="w3l-team py-5" id="team">
     <div class="container">
       <div class="row row-cols-4">
-        <?php for($i=0;$i<=6;$i++) :?>
+        <!-- ?php for($i=0;$i<=6;$i++) :? -->
         <div class="col-sm-6 mt-lg-4" style="max-width:300px;margin-top:20px">
           <div class="box16">
-            <a href="#url"><img src="assets/images/team1.jpg" alt="" class="img-fluid radius-image" /></a>
+            <a href="#url"><img src="assets/images/lala.png" alt="" class="img-fluid radius-image" /></a>
             <div class="box-content">
-                <h3 class="title"><a href="#url">James</a></h3>
-                <span class="post">Director</span>
+                <h3 class="title"><a href="#url">Hayyallah F.R.</a></h3>
+                <span class="post">Kesenian</span>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                            <span class="fa fa-facebook-f"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mt-lg-4" style="max-width:300px;margin-top:20px">
+          <div class="box16">
+            <a href="#url"><img src="assets/images/lorencia.png" alt="" class="img-fluid radius-image" /></a>
+            <div class="box-content">
+                <h3 class="title"><a href="#url">Lorencia M.P.</a></h3>
+                <span class="post">Kesenian</span>
                 <ul class="social">
                     <li>
                         <a href="#" class="facebook">
@@ -528,7 +549,7 @@ include 'admin/functions.php';
           </div>
         </div>
         
-    <?php endfor;?>
+    <!-- ?php endfor;? -->
       </div>
     </div>
     </section>
