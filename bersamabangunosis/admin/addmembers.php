@@ -3,7 +3,7 @@
 
     if (isset($_POST["submit"])) { 
 
-        if(program($_POST) > 0){
+        if(members($_POST) > 0){
             echo "<script>
         alert('Data berhasil diubah');
         document.location.href='index.php';
@@ -26,12 +26,22 @@
                   </div>
                   <div class="col-lg-6">
                     <fieldset>
-                      <input type="text" name="link" id="link" placeholder="link" autocomplete="on">
+                      <input type="text" name="divisi" id="divisi" placeholder="Divisi" autocomplete="on">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="date" name="dob" id="dob" placeholder="Tanggal Lahir" autocomplete="on">
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <textarea name="detail" type="text" class="form-control" id="detail" placeholder="Detail"></textarea>  
+                      <textarea name="words" type="text" class="form-control" id="words" placeholder="Words From Member"></textarea>  
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="date" name="akhir" id="akhir" placeholder="Tanggal Akhir Jabatan" autocomplete="on">
                     </fieldset>
                   </div>
                   <div class="col-lg-12">

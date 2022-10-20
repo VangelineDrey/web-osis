@@ -86,9 +86,15 @@ function upload($gambar){
     $nama= htmlspecialchars($data["name"]);
     $link= htmlspecialchars($data["redirect"]);
     $detail= htmlspecialchars($data["detail"]);
-    $gambar= htmlspecialchars($data["image"]);
+    $gambarlama= htmlspecialchars($data["oldimage"]);
+    
+    if($_FILES['image']['error'] === 4){
+        $gambar=$gambarlama;
+    } else {
+    $gambar= upload('image');
+    }
 
-    $query= "UPDATE proker SET name='$nama',redirect='$link',detail='$detail'
+    $query= "UPDATE proker SET name='$nama',redirect='$link',detail='$detail',image='$gambar'
     WHERE id= $id
     ";
     mysqli_query($conn,$query);
@@ -157,7 +163,13 @@ function upload($gambar){
         $id=$data["id"]; 
         $nama= htmlspecialchars($data["name"]);
         $descr= htmlspecialchars($data["descr"]);
-        $gambar = uploadd("image");
+        $gambarlama= htmlspecialchars($data["oldimage"]);
+
+        if($_FILES['image']['error'] === 4){
+            $gambar=$gambarlama;
+        } else {
+        $gambar= uploadd('image');
+        }
     
         $query= "UPDATE divisi SET name='$nama',shortdesc='$descr',image='$gambar'
         WHERE id= $id
@@ -232,7 +244,13 @@ function upload($gambar){
             $tag= htmlspecialchars($data["tag"]);
             $author= htmlspecialchars($data["author"]);
             $link= htmlspecialchars($data["link"]);
-            $gambar = uploada("image");
+            $gambarlama= htmlspecialchars($data["oldimage"]);
+    
+            if($_FILES['image']['error'] === 4){
+                $gambar=$gambarlama;
+            } else {
+            $gambar= uploada('image');
+            }
         
             $query= "UPDATE artikel SET title='$title',tag='$tag', author='$author',link='$link',image='$gambar'
             WHERE id= $id
@@ -255,10 +273,11 @@ function upload($gambar){
                 $divisi= htmlspecialchars($data["divisi"]);
                 $dob= htmlspecialchars($data["dob"]);
                 $words= htmlspecialchars($data["words"]);
+                $akhir= htmlspecialchars($data["akhir"]);
                 $gambar = uploadm("image");
             
                 $query= "INSERT INTO anggota
-                 VALUES ('','$nama','$divisi','$dob','$words','$gambar')
+                 VALUES ('','$nama','$divisi','$dob','$words','$akhir','$gambar')
                  ";
                  mysqli_query($conn,$query);
             
@@ -306,9 +325,16 @@ function upload($gambar){
                 $divisi= htmlspecialchars($data["divisi"]);
                 $dob= htmlspecialchars($data["dob"]);
                 $words= htmlspecialchars($data["words"]);
-                $gambar = uploadm("image");
+                $akhir=htmlspecialchars($data["akhir"]);
+                $gambarlama= htmlspecialchars($data["oldimage"]);
+    
+                if($_FILES['image']['error'] === 4){
+                    $gambar=$gambarlama;
+                } else {
+                $gambar= uploadm('image');
+                }
             
-                $query= "UPDATE anggota SET name='$nama', divisi='$divisi', dob='$dob',words='$words',image='$gambar'
+                $query= "UPDATE anggota SET name='$nama', divisi='$divisi', dob='$dob',words='$words',image='$gambar', akhirjabatan='$akhir'
                 WHERE id= $id
                 ";
                 mysqli_query($conn,$query);

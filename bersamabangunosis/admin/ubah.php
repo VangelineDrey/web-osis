@@ -8,7 +8,7 @@ $dbk= query("SELECT * FROM buku_tamu WHERE id_pesan =$id")[0];
 
 if (isset($_POST["submit"])) { 
 
-     if(ubah($_POST) > 0){
+     if(programedit($_POST) > 0){
           echo "<script>
 alert('Data berhasil diubah');
 document.location.href='index.php';
