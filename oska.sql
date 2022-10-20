@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 13, 2022 at 03:04 AM
+-- Generation Time: Oct 21, 2022 at 01:15 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -33,6 +33,7 @@ CREATE TABLE `anggota` (
   `divisi` varchar(30) NOT NULL,
   `dob` date NOT NULL,
   `words` varchar(100) NOT NULL,
+  `akhirjabatan` date DEFAULT NULL,
   `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -78,15 +79,6 @@ CREATE TABLE `guests` (
   `message` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `guests`
---
-
-INSERT INTO `guests` (`id`, `name`, `email`, `titile`, `message`) VALUES
-(1, 'tes', 'tessssss@gmail.com', 'tes', 'tes'),
-(2, 'tes', 'tessssss@gmail.com', 'tes', 'tes'),
-(3, 'coba', 'coba@gmail.com', 'coba', 'coba');
-
 -- --------------------------------------------------------
 
 --
@@ -97,6 +89,7 @@ CREATE TABLE `proker` (
   `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `detail` varchar(500) NOT NULL,
+  `redirect` varchar(100) NOT NULL,
   `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -149,6 +142,12 @@ ALTER TABLE `guests`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `proker`
+--
+ALTER TABLE `proker`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -180,7 +179,13 @@ ALTER TABLE `divisi`
 -- AUTO_INCREMENT for table `guests`
 --
 ALTER TABLE `guests`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `proker`
+--
+ALTER TABLE `proker`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`

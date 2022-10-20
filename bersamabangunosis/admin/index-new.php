@@ -12,7 +12,7 @@ if(!isset($_SESSION["login"])){
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aku Sampah | Main Data</title>
+  <title>OSKA | Main Data</title>
     <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 
@@ -99,8 +99,8 @@ th {
                             <td>".$data['name']."</td>
                             <td>".$data['redirect']."</td>
                             <td>".$data['detail']."</td>".
-                            '<td>'.'<a href="privilege/sherc.php?who='.$data['id'].'">'.'Change </a>'.'|'.
-                                  '<a href="privilege/sherd.php?who='.$data['id'].'">'.' Delete</a></td>'.
+                            '<td>'.'<a href="editprogram.php?id='.$data['id'].'">'.'Change </a>'.'|'.
+                                  '<a href="deleteprogram.php?id='.$data['id'].'">'.' Delete</a></td>'.
                             "</tr>";
                             $i++;
                         }
@@ -172,8 +172,8 @@ th {
                             <td>".$data['id']."</td>
                             <td>".$data['name']."</td>
                             <td>".$data['shortdesc']."</td>".
-                            '<td>'.'<a href="privilege/sherc.php?who='.$data['id'].'">'.'Change </a>'.'|'.
-                                  '<a href="privilege/sherd.php?who='.$data['id'].'">'.' Delete</a></td>'.
+                            '<td>'.'<a href="editdivisi.php?id='.$data['id'].'">'.'Change </a>'.'|'.
+                                  '<a href="deletedivisi.php?id='.$data['id'].'">'.' Delete</a></td>'.
                             "</tr>";
                             $i++;
                         }
@@ -207,7 +207,7 @@ th {
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Trash Man</h1>
+            <h1>Artikel</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -249,8 +249,8 @@ th {
                             <td>".$data['tag']."</td>
                             <td>".$data['author']."</td>
                             <td>".$data['link']."</td>".
-                            '<td>'.'<a href="privilege/sherc.php?who='.$data['id'].'">'.'Change </a>'.'|'.
-                                  '<a href="privilege/sherd.php?who='.$data['id'].'">'.' Delete</a></td>'.
+                            '<td>'.'<a href="editnews.php?id='.$data['id'].'">'.'Change </a>'.'|'.
+                                  '<a href="deleteartikel.php?id='.$data['id'].'">'.' Delete</a></td>'.
                             "</tr>";
                             $i++;
                         }
@@ -283,7 +283,7 @@ th {
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>TrashSaction</h1>
+            <h1>Keanggotaan</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -327,8 +327,8 @@ th {
                             <td>".$data['dob']."</td>
                             <td>".$data['words']."</td>
                             <td>".$data['akhirjabatan']."</td>".
-                            '<td>'.'<a href="privilege/sherc.php?who='.$data['id'].'">'.'Change </a>'.'|'.
-                                  '<a href="privilege/sherd.php?who='.$data['id'].'">'.' Delete</a></td>'.
+                            '<td>'.'<a href="editmembers.php?id='.$data['id'].'">'.'Change </a>'.'|'.
+                                  '<a href="deletemembers.php?id='.$data['id'].'">'.' Delete</a></td>'.
                             "</tr>";
                             $i++;
                         }
@@ -374,25 +374,5 @@ th {
 <!-- ./wrapper -->
 
 <!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<script src="plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-<script src="plugins/jszip/jszip.min.js"></script>
-<script src="plugins/pdfmake/pdfmake.min.js"></script>
-<script src="plugins/pdfmake/vfs_fonts.js"></script>
-<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
-<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
-
 </body>
 </html>
