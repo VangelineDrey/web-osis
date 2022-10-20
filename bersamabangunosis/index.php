@@ -96,7 +96,7 @@ include 'admin/functions.php';
               </div>
             </div> -->
             <div class="top-quote mr-lg-2 text-center">
-              <a href="#login" class="btn login mr-2"><span class="fa fa-user"></span> login</a>
+              <a href="login/login.php" class="btn login mr-2"><span class="fa fa-user"></span> login</a>
             </div>
           </div>
 
@@ -546,9 +546,9 @@ include 'admin/functions.php';
                 <h2>Feel Free To Send Us a Message About Your Ideas or Complain About Our Organization</h2>
                 <p>Kami terbuka dengan segala kritik dan saran. Organisasi ini akan berkembang lebih jauh lagi jika ide brilian kalian bisa kami ketahui.</p>
                 <div class="phone-info">
-                  <h4><span><i class="fa fa-phone"></i> <a href="#">010-020-0340</a></span></h4>
-                  <h4 style="margin-top:2%;"><span><i class="fa fa-google"></i> <a href="#">oskacktc@cintakasih.sch.id</a></span></h4>
-                  <h4 style="margin-top:2%;"><span><i class="fa">Line</i> <a href="#">< idLine ></a></span></h4>
+                  <h4><span><i class="fa fa-instagram"></i> <a href="https://www.instagram.com/osis_smktzuchi/?hl=ids">@osis_smktzuchi</a></span></h4>
+                  <h4 style="margin-top:2%;"><span><i class="fa fa-google"></i> <a href="#">oskacktc@cintakasihtuchi.sch.id</a></span></h4>
+                  <!-- <h4 style="margin-top:2%;"><span><i class="fa">Line</i> <a href="#">< idLine ></a></span></h4> -->
                 </div>
               </div>
             </div>
