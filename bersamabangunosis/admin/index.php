@@ -322,7 +322,7 @@ th {
                         {
                             echo "<tr>
                             <td>".$i."</td>
-                            <td>".$data['image']."</td>
+                            <td> <img src='images/".$data['image']."' width='150'></td>
                             <td>".$data['id']."</td>
                             <td>".$data['name']."</td>
                             <td>".$data['divisi']."</td>
