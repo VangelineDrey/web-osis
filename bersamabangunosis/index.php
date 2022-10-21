@@ -281,8 +281,7 @@ include 'admin/functions.php';
                                         <li><span class="fa fa-star-o"></span></li>
                                     </ul> -->
                                 </div>
-                                <a href="https://smk.cintakasihtzuchi.sch.id/lomba-17-agustus-smk-tzu-chi-2022/" class="course-desc">Lomba 17 Agustus-An SMK Cinta Kasih Tzu Chi 2022
-                                    Author</a>
+                                <a href="https://smk.cintakasihtzuchi.sch.id/lomba-17-agustus-smk-tzu-chi-2022/" class="course-desc">Lomba 17 Agustus-An SMK Cinta Kasih Tzu Chi 2022</a>
                                 <!-- <div class="course-meta mt-4">
                                     <div class="meta-item course-lesson">
                                         <span class="fa fa-clock-o"></span>
