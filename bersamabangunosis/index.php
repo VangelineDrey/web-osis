@@ -72,7 +72,7 @@ include 'admin/functions.php';
                 <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item @@about__active">
-                <a class="nav-link" href="about.html  ">About</a>
+                <a class="nav-link" href="#top">About</a>
               </li>
               <li class="nav-item @@kegiatan__active">
                 <a class="nav-link" href="#kegiatan">Kegiatan</a>
@@ -415,7 +415,7 @@ include 'admin/functions.php';
                 <h5 class="title-small mb-1">Start learning about us</h5>
                 <h3 class="title-big">Kenali kami lebih jauh dan beri kami saran atau kritik</h3>
                 <a href="#started" class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2">Get started now</a>
-                <a href="contact.html" class="btn btn-style btn-primary mt-sm-5 mt-4">Contact Us</a>
+                <a href="#contact" class="btn btn-style btn-primary mt-sm-5 mt-4">Contact Us</a>
             </div>
         </div>
     </div>

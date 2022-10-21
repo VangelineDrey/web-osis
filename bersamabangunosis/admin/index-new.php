@@ -53,7 +53,7 @@ th {
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Data OSKA</h1>
+            <h1>Data Program</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -73,7 +73,7 @@ th {
             <div class="card">
               <!-- /.card-header -->
               <div class="card-body">
-
+<a href="addprogram.php">Tambah Program Kerja</a>
                 <table id="tabel-data-two">
                     <thead>
                         <tr>
@@ -148,7 +148,7 @@ th {
             <div class="card">
               <!-- /.card-header -->
               <div class="card-body">
-
+              <a href="adddivisi.php">Tambah Divisi</a>
               <table id="tabel-data-three">
                     <thead>
                         <tr>
@@ -222,6 +222,7 @@ th {
               <!-- /.card-header -->
               <div class="card-body">
 
+              <a href="addnews.php">Tambah Artikel</a>
               <table id="tabel-data-five">
                     <thead>
                         <tr>
@@ -298,6 +299,7 @@ th {
               <!-- /.card-header -->
               <div class="card-body">
 
+              <a href="addmembers.php">Tambah Anggota</a>
                 <table id="tabel-data-six">
                     <thead>
                         <tr>
