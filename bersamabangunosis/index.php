@@ -383,7 +383,7 @@ include 'admin/functions.php';
                         <div class="call-grids-w3 d-grid">
                             <div class="grids-1 box-wrap">
                                 <a href="#more" class="icon"><span class="fa fa-certificate"></span></a>
-                                <h4><a href="https://www.youtube.com/channel/UCgiGPgwMVXUeYaapqxXjLzw" class="title-head">BIBEKA</a></h4>
+                                <h4><a href="https://www.youtube.com/watch?v=IR5CWtknn_s&list=PL4kZZK9BleOD5q2EhhUVmQWhGSmnnGDym" class="title-head">BIBEKA</a></h4>
                                 <p>Program podcast OSKA yang membahas mengenai topik yang fun dan insightfull.</p>
                             </div>
                             <div class="grids-1 box-wrap">
