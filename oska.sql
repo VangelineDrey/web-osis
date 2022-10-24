@@ -53,7 +53,28 @@ CREATE TABLE `artikel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
-
+INSERT INTO `anggota` (`id`, `name`, `divisi`, `dob`, `words`, `akhirjabatan`, `image`) VALUES
+(1, 'Vincent Sutanto', 'Ketua Osis', '2022-11-04', 'tes', '2022-10-21', 'members63521664805db.png'),
+(2, 'Stefanny', 'Wakil Ketua Osis', '2022-10-21', 'tes', '2022-10-21', 'members6352169c92997.png'),
+(3, 'Marsela', 'Sekretaris ', '2022-10-21', 'tes', '2022-10-21', 'members635216ceb63de.png'),
+(4, 'Evangeline Audrey', 'Bendahara ', '2022-10-21', 'tes', '2022-10-21', 'members6352170918048.png'),
+(5, 'Shela Tifa Pramono', 'Humas', '2022-10-21', 'tes', '2022-10-21', 'members6352173eac090.png'),
+(6, 'Lorencia M. P.', 'Kesenian', '2022-10-21', 'test', '2022-10-21', 'members6352179b65980.png'),
+(7, 'Hayyallah F R', 'Kesenian', '2022-10-21', 'tes', '2022-10-21', 'members635218590515c.png'),
+(8, 'Jessica Siemen', 'KWU ', '2022-10-21', 'tes', '2022-10-21', 'members635218f3104d1.png'),
+(9, 'Ronald Ramlian', 'BIBEKA (IGSTS) ', '2022-10-21', 'tes', '2022-10-21', 'members63521923da869.png'),
+(10, 'Michelle V L', 'BIBEKA ', '2022-10-21', 'tes', '2022-10-21', 'members635219572535f.png'),
+(11, 'Vinca Oktavia', 'Bendahara ', '2022-10-21', 'tes', '2022-10-21', 'members635219bfa30b5.png'),
+(12, 'Dinda', 'Humas', '2022-10-21', 'tes', '2022-10-21', 'members63521a0c712e6.png'),
+(13, 'Neesya', 'Jurnalistik ', '2022-10-21', 'tes', '2022-10-21', 'members63521b4e3e8d0.png'),
+(14, 'Jea altika ', 'Kesenian', '2022-10-21', 'tes', '2022-10-21', 'members63521bbf180ab.png'),
+(15, 'Novi', 'KWU', '2022-10-21', 'tes', '2022-10-21', 'members63521bfe63eec.png'),
+(16, 'Anggrelio', 'BIBEKA', '2022-10-21', 'tes', '2022-10-21', 'members63521c45efed2.png'),
+(17, 'Sintia', 'Kesenian', '2022-10-21', 'tes', '2022-10-21', 'members63521c72ddd27.png'),
+(18, 'Edward', 'Jurnalistik', '2022-10-21', 'tes', '2022-10-21', 'members63521cab134fa.png'),
+(19, 'Rebeca', 'Jurnalistik', '2022-10-21', 'tes', '2022-10-21', 'members63521cd055c9c.png'),
+(20, 'Kenneth', 'Humas', '2022-10-21', 'tes', '2022-10-21', 'members63521cf756b2c.png'),
+(21, 'ferdi', 'Kesenian', '2022-10-21', 'tes', '2022-10-21', 'members63522004af99c.jpg');
 --
 -- Table structure for table `divisi`
 --
