@@ -26,6 +26,7 @@
                   </div>
                   <div class="col-lg-6">
                     <fieldset>
+                      
                       <input type="text" name="divisi" id="divisi" placeholder="Divisi" autocomplete="on">
                     </fieldset>
                   </div>
