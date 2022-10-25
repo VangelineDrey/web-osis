@@ -3,6 +3,9 @@ include 'admin/functions.php';
 if(isset($_GET['divisi'])){
     $divisi = $_GET['divisi'];
     $datas = query("SELECT * FROM anggota WHERE divisi = '$divisi'");
+} else {
+    $datas = query("SELECT * FROM anggota");
+    $divisi = 'Anggota OSIS SMK Cinta Kasih Tzu Chi';
 }
 ?>
 <!DOCTYPE html>
@@ -18,7 +21,7 @@ if(isset($_GET['divisi'])){
         </style>
     <style type="text/css">
             body{
-                background: url(../img/bg-classroom.jpg) no-repeat center center fixed; 
+                background: url(assets/images/bg-classroom.jpg) no-repeat center center fixed; 
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -96,9 +99,9 @@ if(isset($_GET['divisi'])){
         foreach($datas as $data){?>
             <div style="background-color:black; max-width:200px;max-height:300px">
             <?php if($data['image']!=""){?>
-                <img src="assets/images/people/<?php echo $data['image'];?>" onclick="window.location.href = '../anggota/<?php echo $data['id']; ?>'"/>
+                <img src="admin/images/<?php echo $data['image'];?>" onclick="window.location.href = '../anggota/<?php echo $data['id']; ?>'"/>
             <?php } else {?>
-                <img src="assets/images/noprofile.jpg" onclick="window.location.href = '../anggota/<?php echo $data['id']; ?>'"/>
+                <img src="admin/images/noprofile.jpg" onclick="window.location.href = '../anggota/<?php echo $data['id']; ?>'"/>
             <?php } ?>
             <a href="anggota.php?id=<?php echo $data['id']; ?>">
             <p style="margin-top:3px;"><?php echo $data['name'] ?> | <?php echo $data['akhirjabatan']; ?></p>
