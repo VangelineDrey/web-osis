@@ -1,3 +1,24 @@
+<?php
+	require '../admin/functions.php';
+	date_default_timezone_set('Asia/Jakarta');
+	$now= date('Y/m/d H:i:s');
+
+    if (isset($_POST["submit"])) { 
+
+        if(vote($_POST) > 0){
+            echo "<script>
+        alert('Data berhasil diubah');
+        document.location.href='index.php';
+            </script>
+            ";
+            
+        } else {echo "<script>
+            alert('Data gagal diubah(fileubah)');
+            document.location.href='index.php';
+                        </script>;";
+        }
+        }
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -27,7 +48,9 @@
 				      		<div id="form-message-success" class="mb-4">
 				            Your message was sent, thank you!
 				      		</div>
-									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm" action="">
+										<input type="hidden" name="timestamps" value="<?php echo $now;?>"/>
+										<input type="hidden" name="buhleidonea" value="1"/>
 										<div class="row">
 											<div class="col-md-12">
 												<div class="form-group">
@@ -36,12 +59,12 @@
 											</div>
 											<div class="col-md-12"> 
 												<div class="form-group">
-													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+													<input type="text" class="form-control" name="nik" id="nik" placeholder="NIK">
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<input type="submit" value="Send Message" class="btn btn-primary">
+													<input type="submit" name="submit" value="Send Message" class="btn btn-primary">
 													<div class="submitting"></div>
 												</div>
 											</div>
@@ -64,7 +87,6 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
-  <script src="js/main.js"></script>
 
 	</body>
 </html>
