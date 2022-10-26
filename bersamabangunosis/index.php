@@ -22,6 +22,9 @@ include 'admin/functions.php';
                     </script>;";
     }
     }
+    
+      $prokers = query("SELECT * FROM proker");
+      $artikels = query("SELECT * FROM artikel");
 ?>
     <!doctype html>
     <html lang="en">
@@ -225,11 +228,14 @@ include 'admin/functions.php';
                 <h5 class="title-small text-center mb-1">Kegiatan OSIS SMK CKTC</h5>
                 <h3 class="title-big text-center mb-sm-5 mb-4">Artikel dan Berita Kegiatan <span>SMK</span></h3>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 item">
+                <?php
+                  $i = -4;//$i=-(x), x is the max number for display
+                  foreach ($artikels as $artikel) {?>
+                    <div class="col-lg-4 col-md-6 item mt-lg-0 mt-5">
                         <div class="card">
                             <div class="card-header p-0 position-relative">
                                 <a href="#course-single" class="zoom d-block">
-                                    <img class="card-img-bottom d-block" src="assets/images/upacara.jpeg"
+                                    <img class="card-img-bottom d-block" src="admin/images/<?=$artikel['image'];?>" style='max-height:250px;width:auto'
                                         alt="Card image cap">
                                 </a>
                                 <div class="post-pos">
@@ -239,15 +245,15 @@ include 'admin/functions.php';
                             <div class="card-body course-details">
                                 <div class="price-review d-flex justify-content-between mb-1align-items-center">
                                 </div>
-                                <a href="https://smk.cintakasihtzuchi.sch.id/upacara-hut-ri-smk-tzu-chi-2022/" class="course-desc">Upacara HUT RI Sekolah Cinta Kasih Tzu Chi 2022
+                                <a href="<?=$artikel['link'];?>" class="course-desc"><?=$artikel['title'];?>
                                 </a>
                             </div>
                             <div class="card-footer">
                                 <div class="author align-items-center">
-                                    <img src="assets/images/a1.jpg" alt="" class="img-fluid rounded-circle">
+                                    <img src="assets/images/noprofile.jpg" alt="" class="img-fluid rounded-circle">
                                     <ul class="blog-meta">
                                         <li>
-                                            <span class="meta-value mx-1">by</span> <a href="#author"> Rebecca</a>
+                                            <span class="meta-value mx-1">by</span> <a href="#author"> <?=$artikel['author'];?></a>
                                         </li>
                                         <!-- <li>
                                             <span class="meta-value mx-1">in</span> <a href="#author"> Programing</a>
@@ -257,7 +263,12 @@ include 'admin/functions.php';
                             </div>
                         </div>
                     </div>
+                    <?php
+                        if (++$i == 0){break;}
+                    }
+                    ?>
     
+<<<<<<< HEAD
                     <div class="col-lg-4 col-md-6 item mt-md-0 mt-5">
                         <div class="card">
                             <div class="card-header p-0 position-relative">
@@ -356,6 +367,8 @@ include 'admin/functions.php';
                             </div>
                         </div>
                     </div>
+=======
+>>>>>>> 09b70dca8fcc5e7cfc4111a4059db86063982f65
                 </div>
                 <div class="mt-5 text-more">
                     <p class="pt-md-3 sample text-center">
@@ -376,12 +389,16 @@ include 'admin/functions.php';
                         <h3 class="title-big mb-4">Program Kerja </h3>
                         <p class="text-para">Program Kerja OSIS SMK Cinta Kasih Tzu Chi dirancang dan dibentuk oleh pengurus OSIS dengan tujuan memaksimalkan potensi dan kreativitas para siswa agar bisa berprestasi dan meningkatkan kepercayaan diri.</p>
                         <p class="mt-3">Program Kerja yang sudah terlaksana ataupun yang masih dalam tahap perancangan hadir dalam beberapa bentuk. Seperti kegiatan, diskusi dan postingan media sosial, dan masih banyak lainnya.</p>
-                        <a href="#kegiatan" class="btn btn-primary btn-style mt-md-5 mt-4">Lihat Kegiatan SMK Cinta Kasih Tzu Chi</a>
+                        <a href="keanggotaan.php" class="btn btn-primary btn-style mt-md-5 mt-4">Lihat Kegiatan SMK Cinta Kasih Tzu Chi</a>
                     </div>
                     <div class="col-lg-7 feature-grid-right mt-lg-0 mt-5">
                         <div class="call-grids-w3 d-grid">
+                          <?php
+                            $i = -4;//$i=-(x), x is the max number for display
+                            foreach ($prokers as $proker) {?>
                             <div class="grids-1 box-wrap">
                                 <a href="#more" class="icon"><span class="fa fa-certificate"></span></a>
+<<<<<<< HEAD
                                 <h4><a href="https://www.youtube.com/watch?v=IR5CWtknn_s&list=PL4kZZK9BleOD5q2EhhUVmQWhGSmnnGDym" class="title-head">BIBEKA</a></h4>
                                 <p>Program podcast OSKA yang membahas mengenai topik yang fun dan insightfull.</p>
                             </div>
@@ -399,7 +416,15 @@ include 'admin/functions.php';
                                 <a href="#more" class="icon"><span class="fa fa-graduation-cap"></span></a>
                                 <h4><a href="https://www.instagram.com/osis_smktzuchi/?hl=ids" class="title-head">Instagram</a></h4>
                                 <p>Berbagi informasi, poster hari besar & keagamaan, serta birthday reminder.</p>
+=======
+                                <h4><a href="<?=$proker['redirect'];?>" class="title-head"><?=$proker["name"];?></a></h4>
+                                <p><?=$proker['detail'];?></p>
+>>>>>>> 09b70dca8fcc5e7cfc4111a4059db86063982f65
                             </div>
+                            <?php
+                                if (++$i == 0){break;}
+                            }
+                          ?>
                         </div>
                     </div>
                 </div>
