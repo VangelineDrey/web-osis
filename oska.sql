@@ -52,8 +52,33 @@ CREATE TABLE `artikel` (
   `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+INSERT INTO `artikel` (`id`, `title`, `tag`, `author`, `link`, `image`) VALUES
+(1, 'Upacara HUT RI Sekolah Cinta K', 'Event', 'Rebecca', 'https://smk.cintakasihtzuchi.sch.id/upacara-hut-ri-smk-tzu-chi-2022/', 'artikel63521b39c8292.jpg'),
+(2, 'Lomba 17 Agustus-An SMK Cinta ', 'Event', 'Rebecca', 'https://smk.cintakasihtzuchi.sch.id/lomba-17-agustus-smk-tzu-chi-2022/', 'artikel63521b6f2b34b.jpg'),
+(3, 'Hari Pendidikan Nasional SMK C', 'Event', 'Vinsen Susanto', 'https://smk.cintakasihtzuchi.sch.id/hardiknas-smk-cinta-kasih-tzu-chi-2022/', 'artikel63521b9a2c2fb.jpg');
 -- --------------------------------------------------------
-
+INSERT INTO `anggota` (`id`, `name`, `divisi`, `dob`, `words`, `akhirjabatan`, `image`) VALUES
+(1, 'Vincent Sutanto', 'Ketua Osis', '2022-11-04', 'tes', '2022-10-21', 'members63521664805db.png'),
+(2, 'Stefanny', 'Wakil Ketua Osis', '2022-10-21', 'tes', '2022-10-21', 'members6352169c92997.png'),
+(3, 'Marsela', 'Sekretaris ', '2022-10-21', 'tes', '2022-10-21', 'members635216ceb63de.png'),
+(4, 'Evangeline Audrey', 'Bendahara ', '2022-10-21', 'tes', '2022-10-21', 'members6352170918048.png'),
+(5, 'Shela Tifa Pramono', 'Humas', '2022-10-21', 'tes', '2022-10-21', 'members6352173eac090.png'),
+(6, 'Lorencia M. P.', 'Kesenian', '2022-10-21', 'test', '2022-10-21', 'members6352179b65980.png'),
+(7, 'Hayyallah F R', 'Kesenian', '2022-10-21', 'tes', '2022-10-21', 'members635218590515c.png'),
+(8, 'Jessica Siemen', 'KWU ', '2022-10-21', 'tes', '2022-10-21', 'members635218f3104d1.png'),
+(9, 'Ronald Ramlian', 'BIBEKA (IGSTS) ', '2022-10-21', 'tes', '2022-10-21', 'members63521923da869.png'),
+(10, 'Michelle V L', 'BIBEKA ', '2022-10-21', 'tes', '2022-10-21', 'members635219572535f.png'),
+(11, 'Vinca Oktavia', 'Bendahara ', '2022-10-21', 'tes', '2022-10-21', 'members635219bfa30b5.png'),
+(12, 'Dinda', 'Humas', '2022-10-21', 'tes', '2022-10-21', 'members63521a0c712e6.png'),
+(13, 'Neesya', 'Jurnalistik ', '2022-10-21', 'tes', '2022-10-21', 'members63521b4e3e8d0.png'),
+(14, 'Jea altika ', 'Kesenian', '2022-10-21', 'tes', '2022-10-21', 'members63521bbf180ab.png'),
+(15, 'Novi', 'KWU', '2022-10-21', 'tes', '2022-10-21', 'members63521bfe63eec.png'),
+(16, 'Anggrelio', 'BIBEKA', '2022-10-21', 'tes', '2022-10-21', 'members63521c45efed2.png'),
+(17, 'Sintia', 'Kesenian', '2022-10-21', 'tes', '2022-10-21', 'members63521c72ddd27.png'),
+(18, 'Edward', 'Jurnalistik', '2022-10-21', 'tes', '2022-10-21', 'members63521cab134fa.png'),
+(19, 'Rebeca', 'Jurnalistik', '2022-10-21', 'tes', '2022-10-21', 'members63521cd055c9c.png'),
+(20, 'Kenneth', 'Humas', '2022-10-21', 'tes', '2022-10-21', 'members63521cf756b2c.png'),
+(21, 'ferdi', 'Kesenian', '2022-10-21', 'tes', '2022-10-21', 'members63522004af99c.jpg');
 --
 -- Table structure for table `divisi`
 --
@@ -64,7 +89,16 @@ CREATE TABLE `divisi` (
   `shortdesc` varchar(100) NOT NULL,
   `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
+INSERT INTO `divisi` (`id`, `name`, `shortdesc`, `image`) VALUES
+(1, 'Kesenian', 'Membuat poster', '1'),
+(2, 'Humas', 'Mengatur Konten Instagram', '1'),
+(3, 'Bendahara', 'Mengatur Keuangan', '1'),
+(4, 'Sekretaris', 'Membuat Recap Kerja Osis', '1'),
+(5, 'Sesi Agama', 'Mengatur keagamaan di SMK', '1'),
+(6, 'KWU', 'Mengatur dan mempromosikan penjualan snack  vegetarian', '1'),
+(7, 'Jurnalistik', 'Membuat artikel kegiatan yang ada di smk', '1'),
+(8, 'BIBEKA &amp; IGSTS', 'Mengatur konten', '1'),
+(9, 'Dokumentasi', 'Mendokumentasikan setiap kegiatan', '1');
 -- --------------------------------------------------------
 
 --
@@ -94,7 +128,11 @@ CREATE TABLE `proker` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
-
+INSERT INTO `proker` (`id`, `name`, `detail`, `redirect`, `image`) VALUES
+(1, 'Bibeka', 'Program podcast OSKA yang membahas mengenai topik yang fun dan insightfull.', 'https://www.youtube.com/watch?v=IR5CWtknn_s&amp;list=PL4kZZK9BleOD5q2EhhUVmQWhGSmnnGDym', 'programkerja63521747801cb.png'),
+(2, 'IGSTS', 'Program sharing pengalaman siswa/i SMK Cinta Kasih Tzu Chi, untuk bisa saling bercerita &amp; memotivasi.', 'https://www.instagram.com/osis_smktzuchi/reels/?hl=id', 'programkerja635218ccd22c1.png'),
+(3, 'KWU OSKA', 'Penjualan snack vegetarian yang murah meriah.', 'https://www.instagram.com/stories/highlights/18074856229288907/?hl=id', 'programkerja6352193ab9132.png'),
+(4, 'Instagram', 'Berbagi informasi, poster hari besar &amp; keagamaan, serta birthday reminder.', 'https://www.instagram.com/osis_smktzuchi/?hl=ids', 'programkerja63521976d1a6d.png');
 --
 -- Table structure for table `users`
 --

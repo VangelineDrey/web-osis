@@ -347,4 +347,20 @@ function upload($gambar){
                     mysqli_query($conn,"DELETE FROM anggota where id = $id");
                     return mysqli_affected_rows($conn);
                 }    
+
+                function vote($data){
+                    global $conn;
+                
+                    $name= htmlspecialchars($data["name"]);
+                    $nik= htmlspecialchars($data["nik"]);
+                    $timestamps= htmlspecialchars($data["timestamps"]);
+                    $vote= htmlspecialchars($data["buhleidonea"]);
+                    $query= "INSERT INTO pemilu
+                     VALUES ('$nik','$name','$timestamps','$vote')
+                     ";
+                     mysqli_query($conn,$query);
+                
+                    return mysqli_affected_rows($conn);
+                    
+                }
 ?>
