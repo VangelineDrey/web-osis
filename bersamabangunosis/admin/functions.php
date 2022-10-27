@@ -349,18 +349,30 @@ function upload($gambar){
                 }    
 
                 function vote($data){
-                    global $conn;
-                
-                    $name= htmlspecialchars($data["name"]);
-                    $nik= htmlspecialchars($data["nik"]);
-                    $timestamps= htmlspecialchars($data["timestamps"]);
-                    $vote= htmlspecialchars($data["buhleidonea"]);
-                    $query= "INSERT INTO pemilu
-                     VALUES ('$nik','$name','$timestamps','$vote')
-                     ";
-                     mysqli_query($conn,$query);
-                
-                    return mysqli_affected_rows($conn);
+                    global $conn;                
+                    $name= htmlspecialchars($_POST["name"]);
+                    $nik= htmlspecialchars($_POST["nik"]);
+                    $timestamps= htmlspecialchars($_POST["timestamps"]);
+                    $vote= htmlspecialchars($_POST["buhleidonea"]);
+
                     
+                    $validations=query("SELECT * FROM pemilu where nik = '$nik' AND name='$name'");
+                    
+                    if(!empty($validations)){
+                    $validation=query("SELECT * FROM pemilu where nik = '$nik' AND name='$name'")[0];
+                    
+                        if($validation['changecount']!=1){    
+                        $query= "UPDATE pemilu SET vote = '$vote', timestamps='$timestamps', changecount=1 WHERE nik='$nik'
+                        ";
+                        mysqli_query($conn,$query);
+                        return mysqli_affected_rows($conn);
+                        }
+                        else{
+                        return 0;
+                        }
+                    }
+                    else{
+                        return mysqli_affected_rows($conn);
+                    }
                 }
 ?>
