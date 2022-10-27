@@ -268,6 +268,107 @@ include 'admin/functions.php';
                     }
                     ?>
     
+<<<<<<< HEAD
+                    <div class="col-lg-4 col-md-6 item mt-md-0 mt-5">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#course-single" class="zoom d-block">
+                                    <img class="card-img-bottom d-block" src="assets/images/hut-ri.jpeg"
+                                        alt="Card image cap">
+                                </a>
+                                <!-- <div class="course-price-badge"> Free</div>
+                                <div class="post-pos">
+                                    <a href="#reciepe" class="receipe blue">Beginner</a>
+                                </div> -->
+                            </div>
+                            <div class="card-body course-details">
+                                <div class="price-review d-flex justify-content-between mb-1align-items-center">
+                                    <!-- <p>$00.00</p>
+                                    <ul class="rating-star">
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star-o"></span></li>
+                                    </ul> -->
+                                </div>
+                                <a href="https://smk.cintakasihtzuchi.sch.id/lomba-17-agustus-smk-tzu-chi-2022/" class="course-desc">Lomba 17 Agustus-An SMK Cinta Kasih Tzu Chi 2022</a>
+                                <!-- <div class="course-meta mt-4">
+                                    <div class="meta-item course-lesson">
+                                        <span class="fa fa-clock-o"></span>
+                                        <span class="meta-value"> 20 hrs </span>
+                                    </div>
+                                    <div class="meta-item course-">
+                                        <span class="fa fa-user-o"></span>
+                                        <span class="meta-value"> 50 </span>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="card-footer">
+                                <div class="author align-items-center">
+                                    <img src="assets/images/a2.jpg" alt="" class="img-fluid rounded-circle">
+                                    <ul class="blog-meta">
+                                        <li>
+                                            <span class="meta-value mx-1">by</span> <a href="#author"> Rebecca</a>
+                                        </li>
+                                        <!-- <li>
+                                            <span class="meta-value mx-1">in</span> <a href="#author"> Teaching</a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 item mt-lg-0 mt-5">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#course-single" class="zoom d-block">
+                                    <img class="card-img-bottom d-block" src="assets/images/hardiknas.jpeg"
+                                        alt="Card image cap">
+                                </a>
+                                <!-- <div class="course-price-badge-new"> New</div> -->
+                            </div>
+                            <div class="card-body course-details">
+                                <div class="price-review d-flex justify-content-between mb-1align-items-center">
+                                    <!-- <p>$00.00</p>
+                                    <ul class="rating-star">
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star-o"></span></li>
+                                    </ul> -->
+                                </div>
+                                <a href="https://smk.cintakasihtzuchi.sch.id/hardiknas-smk-cinta-kasih-tzu-chi-2022/" class="course-desc">Hari Pendidikan Nasional SMK Cinta Kasih Tzu Chi 2022</a>
+                                <!-- <div class="course-meta mt-4">
+                                    <div class="meta-item course-lesson">
+                                        <span class="fa fa-clock-o"></span>
+                                        <span class="meta-value"> 20 hrs </span>
+                                    </div>
+                                    <div class="meta-item course-">
+                                        <span class="fa fa-user-o"></span>
+                                        <span class="meta-value"> 50 </span>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="card-footer">
+                                <div class="author align-items-center">
+                                    <img src="assets/images/a4.jpg" alt="" class="img-fluid rounded-circle">
+                                    <ul class="blog-meta">
+                                        <li>
+                                            <span class="meta-value mx-1">by</span> <a href="#author"> Si Jelek</a>
+                                        </li>
+                                        <!-- <li>
+                                            <span class="meta-value mx-1">in</span> <a href="#author"> Programing</a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+=======
+>>>>>>> 09b70dca8fcc5e7cfc4111a4059db86063982f65
                 </div>
                 <div class="mt-5 text-more">
                     <p class="pt-md-3 sample text-center">
@@ -297,8 +398,23 @@ include 'admin/functions.php';
                             foreach ($prokers as $proker) {?>
                             <div class="grids-1 box-wrap">
                                 <a href="#more" class="icon"><span class="fa fa-certificate"></span></a>
-                                <h4><a href="<?=$proker['redirect'];?>" class="title-head"><?=$proker["name"];?></a></h4>
-                                <p><?=$proker['detail'];?></p>
+                                <h4><a href="https://www.youtube.com/watch?v=IR5CWtknn_s&list=PL4kZZK9BleOD5q2EhhUVmQWhGSmnnGDym" class="title-head">BIBEKA</a></h4>
+                                <p>Program podcast OSKA yang membahas mengenai topik yang fun dan insightfull.</p>
+                            </div>
+                            <div class="grids-1 box-wrap">
+                                <a href="#more" class="icon"><span class="fa fa-book"></span></a>
+                                <h4><a href="https://www.instagram.com/osis_smktzuchi/reels/?hl=id" class="title-head">IGSTS</a></h4>
+                                <p>Program sharing pengalaman siswa/i SMK Cinta Kasih Tzu Chi, untuk bisa saling bercerita & memotivasi.</p>
+                            </div>
+                            <div class="grids-1 box-wrap">
+                                <a href="#more" class="icon"><span class="fa fa-trophy"></span></a>
+                                <h4><a href="https://www.instagram.com/stories/highlights/18074856229288907/?hl=id" class="title-head">KWU OSKA</a></h4>
+                                <p>Penjualan snack vegetarian yang murah meriah.</p>
+                            </div>
+                            <div class="grids-1 box-wrap">
+                                <a href="#more" class="icon"><span class="fa fa-graduation-cap"></span></a>
+                                <h4><a href="https://www.instagram.com/osis_smktzuchi/?hl=ids" class="title-head">Instagram</a></h4>
+                                <p>Berbagi informasi, poster hari besar & keagamaan, serta birthday reminder.</p>
                             </div>
                             <?php
                                 if (++$i == 0){break;}
@@ -500,7 +616,7 @@ include 'admin/functions.php';
         <div class="container">
           <div class="row">
             <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-              <p>© Copyright SMK Cinta Kasih Tzu Chi |<a href="#"> Kelompok 5</a> | All Rights Reserved. 
+              <p>© Copyright SMK Cinta Kasih Tzu Chi |<a href="kelompok.php"> Kelompok 5</a> | All Rights Reserved. 
             </div>
           </div>
         </div>
