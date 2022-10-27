@@ -398,7 +398,6 @@ include 'admin/functions.php';
                             foreach ($prokers as $proker) {?>
                             <div class="grids-1 box-wrap">
                                 <a href="#more" class="icon"><span class="fa fa-certificate"></span></a>
-<<<<<<< HEAD
                                 <h4><a href="https://www.youtube.com/watch?v=IR5CWtknn_s&list=PL4kZZK9BleOD5q2EhhUVmQWhGSmnnGDym" class="title-head">BIBEKA</a></h4>
                                 <p>Program podcast OSKA yang membahas mengenai topik yang fun dan insightfull.</p>
                             </div>
@@ -416,10 +415,6 @@ include 'admin/functions.php';
                                 <a href="#more" class="icon"><span class="fa fa-graduation-cap"></span></a>
                                 <h4><a href="https://www.instagram.com/osis_smktzuchi/?hl=ids" class="title-head">Instagram</a></h4>
                                 <p>Berbagi informasi, poster hari besar & keagamaan, serta birthday reminder.</p>
-=======
-                                <h4><a href="<?=$proker['redirect'];?>" class="title-head"><?=$proker["name"];?></a></h4>
-                                <p><?=$proker['detail'];?></p>
->>>>>>> 09b70dca8fcc5e7cfc4111a4059db86063982f65
                             </div>
                             <?php
                                 if (++$i == 0){break;}
