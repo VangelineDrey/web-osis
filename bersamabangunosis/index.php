@@ -597,7 +597,7 @@ include 'admin/functions.php';
         <div class="container">
           <div class="row">
             <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-              <p>© Copyright SMK Cinta Kasih Tzu Chi |<a href="#"> Kelompok 5</a> | All Rights Reserved. 
+              <p>© Copyright SMK Cinta Kasih Tzu Chi |<a href="kelompok.php"> Kelompok 5</a> | All Rights Reserved. 
             </div>
           </div>
         </div>
