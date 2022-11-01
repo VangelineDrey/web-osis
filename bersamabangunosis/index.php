@@ -24,6 +24,7 @@ include 'admin/functions.php';
     }
     
       $prokers = query("SELECT * FROM proker");
+      $divisis = query("SELECT * FROM divisi");
       $artikels = query("SELECT * FROM artikel");
 ?>
     <!doctype html>
@@ -148,7 +149,7 @@ include 'admin/functions.php';
                                     <div class="banner-info-bg">
                                         <h5>SMK JAYA!</h5>
                                         <p class="mt-4 pr-lg-4">Kesuksesan Hanya Didapat oleh Mereka yang Berani dan Bertindak</p>
-                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="#about">Know us more!</a>
+                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="#top">Know us more!</a>
                                     </div>
                                 </div>
                             </div>
@@ -163,7 +164,7 @@ include 'admin/functions.php';
                                     <div class="banner-info-bg">
                                         <h5>SMK BISA!</h5>
                                         <p class="mt-4 pr-lg-4">Kita Tak Akan Tau Sebelum Mencoba</p>
-                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="#about">Know us more!</a>
+                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="#top">Know us more!</a>
                                     </div>
                                 </div>
                             </div>
@@ -339,10 +340,10 @@ include 'admin/functions.php';
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="box16">
-                                    <a href="#url"><img src="assets/images/pincen.png" alt="" class="img-fluid radius-image" /></a>
+                                    <a href="#url"><img src="assets/images/noprofile.jpg" alt="" class="img-fluid radius-image" /></a>
                                     <div class="box-content">
-                                        <h3 class="title"><a href="#url">Vincent Sutanto</a></h3>
-                                        <span class="post">Ketua OSIS</span>
+                                        <h3 class="title"><a href="#url">Inti OSIS</a></h3>
+                                        <span class="post">Core Council</span>
                                         <ul class="social">
                                             <li>
                                                 <a href="#" class="facebook">
@@ -360,10 +361,10 @@ include 'admin/functions.php';
                             </div>
                             <div class="col-sm-6 mt-sm-0 mt-3">
                                 <div class="box16">
-                                    <a href="#url"><img src="assets/images/stefani.png" alt="" class="img-fluid radius-image" /></a>
+                                    <a href="#url"><img src="assets/images/noprofile.jpg" alt="" class="img-fluid radius-image" /></a>
                                     <div class="box-content">
-                                        <h3 class="title"><a href="#url">Stefanny</a></h3>
-                                        <span class="post">Wakil Ketua OSIS</span>
+                                        <h3 class="title"><a href="#url">Guru Pembimbing</a></h3>
+                                        <span class="post">Council Teacher</span>
                                         <ul class="social">
                                             <li>
                                                 <a href="#" class="facebook">
@@ -390,34 +391,13 @@ include 'admin/functions.php';
     <section class="w3l-team py-5" id="team">
     <div class="container">
       <div class="row row-cols-4">
-        <!-- ?php for($i=0;$i<=6;$i++) :? -->
+        <?php foreach ($divisis as $divisi):?>
         <div class="col-sm-6 mt-lg-4" style="max-width:300px;margin-top:20px">
           <div class="box16">
-            <a href="#url"><img src="assets/images/lala.png" alt="" class="img-fluid radius-image" /></a>
+            <a href="#url"><img src="admin/images/<?=$divisi['image'];?>" alt="" class="img-fluid radius-image" /></a>
             <div class="box-content">
-                <h3 class="title"><a href="#url">Hayyallah F.R.</a></h3>
-                <span class="post">Kesenian</span>
-                <ul class="social">
-                    <li>
-                        <a href="#" class="facebook">
-                            <span class="fa fa-facebook-f"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="twitter">
-                            <span class="fa fa-twitter"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 mt-lg-4" style="max-width:300px;margin-top:20px">
-          <div class="box16">
-            <a href="#url"><img src="assets/images/lorencia.png" alt="" class="img-fluid radius-image" /></a>
-            <div class="box-content">
-                <h3 class="title"><a href="#url">Lorencia M.P.</a></h3>
-                <span class="post">Kesenian</span>
+                <h3 class="title"><a href="keanggotaan.php?divisi=<?=$divisi['name']?>"><?=$divisi["name"]?></a></h3>
+                <span class="post"><?=$divisi["shortdesc"]?></span>
                 <ul class="social">
                     <li>
                         <a href="#" class="facebook">
@@ -434,7 +414,7 @@ include 'admin/functions.php';
           </div>
         </div>
         
-    <!-- ?php endfor;? -->
+    <?php endforeach;?>
       </div>
     </div>
     </section>
