@@ -267,8 +267,6 @@ include 'admin/functions.php';
                         if (++$i == 0){break;}
                     }
                     ?>
-    
-<<<<<<< HEAD
                     <div class="col-lg-4 col-md-6 item mt-md-0 mt-5">
                         <div class="card">
                             <div class="card-header p-0 position-relative">
@@ -367,8 +365,6 @@ include 'admin/functions.php';
                             </div>
                         </div>
                     </div>
-=======
->>>>>>> 09b70dca8fcc5e7cfc4111a4059db86063982f65
                 </div>
                 <div class="mt-5 text-more">
                     <p class="pt-md-3 sample text-center">
