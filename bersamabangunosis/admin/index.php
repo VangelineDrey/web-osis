@@ -67,6 +67,7 @@ th {
 
     <!-- Main content -->
     <section class="content">
+      <h2><a href="../login/logout.php">LOGOUT</a></h2>
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
