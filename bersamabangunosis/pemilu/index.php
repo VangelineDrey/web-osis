@@ -29,6 +29,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../assets/images/oska.png" />
+
 	
 	<link rel="stylesheet" href="css/style.css">
     <style>
@@ -71,7 +73,7 @@
 	</head>
 	<body>
 	<section class="ftco-section">
-		<div class="container">
+		<div class="container" style = "margin-top: -50px;">
 			<div class="row justify-content-center">
 				<div class="col-md-12">
 					<div class="wrapper">
@@ -82,13 +84,13 @@
 									<form method="POST" id="contactForm" name="contactForm" class="contactForm" action="">
                                     <div class="row" style="margin: auto;">
                                     <div class="column mb-4" style="margin: auto;">
-                                        <img src="../assets/images/noprofile.jpg" alt="Snow" style="width:100%">
+                                        <img src="../assets/kelompok/img/ferdii.png" alt="Snow" style="width:100%">
                                     </div>
                                     <div class="column mb-4" style="margin: auto;">
-                                        <img src="../assets/images/noprofile.jpg" alt="Forest" style="width:100%">
+                                        <img src="../assets/kelompok/img/pincenn.png" alt="Forest" style="width:100%">
                                     </div>
                                     <div class="column mb-4" style="margin: auto;">
-                                        <img src="../assets/images/noprofile.jpg" alt="Mountains" style="width:100%">
+                                        <img src="../assets/kelompok/img/reynald.png" alt="Mountains" style="width:100%">
                                     </div>
                                     </div>
                                     
@@ -166,4 +168,3 @@
     </script>
 	</body>
 </html>
-
