@@ -99,9 +99,9 @@ if(isset($_GET['divisi'])){
         foreach($datas as $data){?>
             <div style="background-color:black; max-width:200px;max-height:300px">
             <?php if($data['image']!=""){?>
-                <img src="admin/images/<?php echo $data['image'];?>" onclick="window.location.href = '../anggota/<?php echo $data['id']; ?>'"/>
+                <img src="admin/images/<?php echo $data['image'];?>" onclick="window.location.href = 'anggota.php?id=<?php echo $data['id']; ?>'"/>
             <?php } else {?>
-                <img src="admin/images/noprofile.jpg" onclick="window.location.href = '../anggota/<?php echo $data['id']; ?>'"/>
+                <img src="assets/images/noprofile.jpg" onclick="window.location.href = 'anggota.php?id=<?php echo $data['id']; ?>'"/>
             <?php } ?>
             <a href="anggota.php?id=<?php echo $data['id']; ?>">
             <p style="margin-top:3px;"><?php echo $data['name'] ?> | <?php echo $data['akhirjabatan']; ?></p>

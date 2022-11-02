@@ -3,7 +3,7 @@
     Author URL: http://w3layouts.com
     -->
 
-<?php
+    <?php
 
 include 'admin/functions.php';
 
@@ -24,6 +24,7 @@ include 'admin/functions.php';
     }
     
       $prokers = query("SELECT * FROM proker");
+      $divisis = query("SELECT * FROM divisi");
       $artikels = query("SELECT * FROM artikel");
 ?>
     <!doctype html>
@@ -85,6 +86,9 @@ include 'admin/functions.php';
               </li>
               <li class="nav-item @@anggota__active">
                 <a class="nav-link" href="#keanggotaan">Keanggotaan</a>
+              </li>
+              <li class="nav-item @@Pemilu__active">
+                <a class="nav-link" href="pemilu/index-new.php">Pemilu</a>
               </li>
             </ul>
     
@@ -148,7 +152,7 @@ include 'admin/functions.php';
                                     <div class="banner-info-bg">
                                         <h5>SMK JAYA!</h5>
                                         <p class="mt-4 pr-lg-4">Kesuksesan Hanya Didapat oleh Mereka yang Berani dan Bertindak</p>
-                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="#about">Know us more!</a>
+                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="#top">Know us more!</a>
                                     </div>
                                 </div>
                             </div>
@@ -163,7 +167,7 @@ include 'admin/functions.php';
                                     <div class="banner-info-bg">
                                         <h5>SMK BISA!</h5>
                                         <p class="mt-4 pr-lg-4">Kita Tak Akan Tau Sebelum Mencoba</p>
-                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="#about">Know us more!</a>
+                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="#top">Know us more!</a>
                                     </div>
                                 </div>
                             </div>
@@ -365,6 +369,7 @@ include 'admin/functions.php';
                             </div>
                         </div>
                     </div>
+    
                 </div>
                 <div class="mt-5 text-more">
                     <p class="pt-md-3 sample text-center">
@@ -394,23 +399,8 @@ include 'admin/functions.php';
                             foreach ($prokers as $proker) {?>
                             <div class="grids-1 box-wrap">
                                 <a href="#more" class="icon"><span class="fa fa-certificate"></span></a>
-                                <h4><a href="https://www.youtube.com/watch?v=IR5CWtknn_s&list=PL4kZZK9BleOD5q2EhhUVmQWhGSmnnGDym" class="title-head">BIBEKA</a></h4>
-                                <p>Program podcast OSKA yang membahas mengenai topik yang fun dan insightfull.</p>
-                            </div>
-                            <div class="grids-1 box-wrap">
-                                <a href="#more" class="icon"><span class="fa fa-book"></span></a>
-                                <h4><a href="https://www.instagram.com/osis_smktzuchi/reels/?hl=id" class="title-head">IGSTS</a></h4>
-                                <p>Program sharing pengalaman siswa/i SMK Cinta Kasih Tzu Chi, untuk bisa saling bercerita & memotivasi.</p>
-                            </div>
-                            <div class="grids-1 box-wrap">
-                                <a href="#more" class="icon"><span class="fa fa-trophy"></span></a>
-                                <h4><a href="https://www.instagram.com/stories/highlights/18074856229288907/?hl=id" class="title-head">KWU OSKA</a></h4>
-                                <p>Penjualan snack vegetarian yang murah meriah.</p>
-                            </div>
-                            <div class="grids-1 box-wrap">
-                                <a href="#more" class="icon"><span class="fa fa-graduation-cap"></span></a>
-                                <h4><a href="https://www.instagram.com/osis_smktzuchi/?hl=ids" class="title-head">Instagram</a></h4>
-                                <p>Berbagi informasi, poster hari besar & keagamaan, serta birthday reminder.</p>
+                                <h4><a href="<?=$proker['redirect'];?>" class="title-head"><?=$proker["name"];?></a></h4>
+                                <p><?=$proker['detail'];?></p>
                             </div>
                             <?php
                                 if (++$i == 0){break;}
@@ -451,10 +441,10 @@ include 'admin/functions.php';
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="box16">
-                                    <a href="#url"><img src="assets/images/pincen.png" alt="" class="img-fluid radius-image" /></a>
+                                    <a href="#url"><img src="assets/images/noprofile.jpg" alt="" class="img-fluid radius-image" /></a>
                                     <div class="box-content">
-                                        <h3 class="title"><a href="#url">Vincent Sutanto</a></h3>
-                                        <span class="post">Ketua OSIS</span>
+                                        <h3 class="title"><a href="#url">Inti OSIS</a></h3>
+                                        <span class="post">Core Council</span>
                                         <ul class="social">
                                             <li>
                                                 <a href="#" class="facebook">
@@ -472,10 +462,10 @@ include 'admin/functions.php';
                             </div>
                             <div class="col-sm-6 mt-sm-0 mt-3">
                                 <div class="box16">
-                                    <a href="#url"><img src="assets/images/stefani.png" alt="" class="img-fluid radius-image" /></a>
+                                    <a href="#url"><img src="assets/images/noprofile.jpg" alt="" class="img-fluid radius-image" /></a>
                                     <div class="box-content">
-                                        <h3 class="title"><a href="#url">Stefanny</a></h3>
-                                        <span class="post">Wakil Ketua OSIS</span>
+                                        <h3 class="title"><a href="#url">Guru Pembimbing</a></h3>
+                                        <span class="post">Council Teacher</span>
                                         <ul class="social">
                                             <li>
                                                 <a href="#" class="facebook">
@@ -502,34 +492,13 @@ include 'admin/functions.php';
     <section class="w3l-team py-5" id="team">
     <div class="container">
       <div class="row row-cols-4">
-        <!-- ?php for($i=0;$i<=6;$i++) :? -->
+        <?php foreach ($divisis as $divisi):?>
         <div class="col-sm-6 mt-lg-4" style="max-width:300px;margin-top:20px">
           <div class="box16">
-            <a href="#url"><img src="assets/images/lala.png" alt="" class="img-fluid radius-image" /></a>
+            <a href="#url"><img src="admin/images/<?=$divisi['image'];?>" alt="" class="img-fluid radius-image" /></a>
             <div class="box-content">
-                <h3 class="title"><a href="#url">Hayyallah F.R.</a></h3>
-                <span class="post">Kesenian</span>
-                <ul class="social">
-                    <li>
-                        <a href="#" class="facebook">
-                            <span class="fa fa-facebook-f"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="twitter">
-                            <span class="fa fa-twitter"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 mt-lg-4" style="max-width:300px;margin-top:20px">
-          <div class="box16">
-            <a href="#url"><img src="assets/images/lorencia.png" alt="" class="img-fluid radius-image" /></a>
-            <div class="box-content">
-                <h3 class="title"><a href="#url">Lorencia M.P.</a></h3>
-                <span class="post">Kesenian</span>
+                <h3 class="title"><a href="keanggotaan.php?divisi=<?=$divisi['name']?>"><?=$divisi["name"]?></a></h3>
+                <span class="post"><?=$divisi["shortdesc"]?></span>
                 <ul class="social">
                     <li>
                         <a href="#" class="facebook">
@@ -546,7 +515,7 @@ include 'admin/functions.php';
           </div>
         </div>
         
-    <!-- ?php endfor;? -->
+    <?php endforeach;?>
       </div>
     </div>
     </section>
@@ -612,7 +581,7 @@ include 'admin/functions.php';
         <div class="container">
           <div class="row">
             <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-              <p>© Copyright SMK Cinta Kasih Tzu Chi |<a href="kelompok.php"> Kelompok 5</a> | All Rights Reserved. 
+              <p>© Copyright SMK Cinta Kasih Tzu Chi |<a href="#"> Kelompok 5</a> | All Rights Reserved. 
             </div>
           </div>
         </div>

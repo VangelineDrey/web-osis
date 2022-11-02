@@ -95,13 +95,14 @@ th {
 
     <!-- Main content -->
     <section class="content">
+      <h2><a href="../login/logout.php">LOGOUT</a></h2>
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
             <div class="card">
               <!-- /.card-header -->
               <div class="card-body">
-<a href="addprogram.php">Tambah Program Kerja</a>
+                <a href="addprogram.php">Tambah Program Kerja</a>
                 <table id="tabel-data-two">
                     <thead>
                         <tr>
@@ -368,6 +369,76 @@ th {
                     <script>
                     $(document).ready(function(){
                         $('#tabel-data-six').DataTable();
+                    });
+                </script>
+
+                </table>
+
+                </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+
+
+
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Kotak Pesan</h1>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="tabel-data-seven">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Title</th>
+                            <th>Message</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                        $datas = query("select * from guests");
+                        $i=1;
+                        foreach($datas as $data)
+                        {
+                            echo "<tr>
+                            <td>".$i."</td>
+                            <td>".$data['name']."</td>
+                            <td>".$data['email']."</td>
+                            <td>".$data['title']."</td>
+                            <td>".$data['message']."</td>".
+                            '<td>'.'<a href="#deletemessage.php?id='.$data['id'].'">'.' Delete</a></td>'.
+                            "</tr>";
+                            $i++;
+                        }
+                    ?>
+                    </tbody>
+                    
+                    <script>
+                    $(document).ready(function(){
+                        $('#tabel-data-seven').DataTable();
                     });
                 </script>
 

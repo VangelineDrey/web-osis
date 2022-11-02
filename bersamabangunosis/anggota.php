@@ -53,9 +53,9 @@ if(isset($_GET['id'])){
                 <div class="w3-white w3-text-grey w3-card-4">
                     <div class="w3-display-container">
                     <?php if($datas['image'] !=""){?>
-                        <img src="../../img/people/<?php $datas['image']?>" class="peps">
+                        <img src="admin/images/<?=$datas['image']?>" class="peps">
                     <?php }else{?>
-                        <img src="../../img/noprofile.jpg" class="peps"/>
+                        <img src="assets/images/noprofile.jpg" class="peps"/>
                     <?php }?>
                     
                     </div>
@@ -69,8 +69,8 @@ if(isset($_GET['id'])){
                 
                 <div class="w3-container w3-card w3-white w3-margin-bottom">
             <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block" style="float:right;margin-top:5px;">
-                <a href="/" class="text-sm text-gray-700 underline"><i class="fa fa-home w3-hover-opacity"></i>&nbsp;Home</a><t>&nbsp;/&nbsp;
-                <a href="/classroom/<?php $datas["id"]?>" class="text-sm text-gray-700 underline"><i class="fa fa-arrow-left w3-hover-opacity"></i>&nbsp;Back</a>
+                <a href="index.php" class="text-sm text-gray-700  underline"><i class="fa fa-home w3-hover-opacity"></i>&nbsp;Home</a><t>&nbsp;/&nbsp;
+                <a href="keanggotaan.php?divisi=<?php $divisi=strtolower($datas['divisi']); echo $divisi;?>" class="text-sm text-gray-700 underline"><i class="fa fa-arrow-left w3-hover-opacity"></i>&nbsp;Back</a>
             </div>
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><?= $datas['name']?></h2>
                     <div class="w3-container">
@@ -78,7 +78,7 @@ if(isset($_GET['id'])){
                     <h5 class="w3-opacity"><b>Date of Birth / <?= $datas['dob']?></b></h5>
                     <h5 class="w3-opacity"><b>Masa Bakti / <?= $datas['akhirjabatan']?></b></h5><hr>
                     <h6 class="w3-text-teal"><i class="fa fa-file-archive-o fa-fw w3-margin-right"></i>Short Description</h6>
-                    <p><?php $datas['words']?></p>
+                    <p><?= $datas['words']?></p>
                     <hr>
                     </div>
                 </div>
