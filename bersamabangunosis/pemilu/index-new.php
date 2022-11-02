@@ -183,7 +183,7 @@ a[target='_blank'] {
             <form method="POST" id="contactForm" name="contactForm" class="contactForm" action="">
         <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200" style = "margin-top: -50px;">
           <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://www.instagram.com/vincentsutanto._/?hl=id" class="item-wrap fancybox">
+            <a href="#Link-drive-visimisiproker" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Vincent Sutanto</h3>
                 <span>Kandidat 1</span>
@@ -192,7 +192,7 @@ a[target='_blank'] {
             </a>
           </div>
           <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://www.instagram.com/ferdinan_zk/?hl=id" class="item-wrap fancybox">
+            <a href="#Link-drive-visimisiproker" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Ferdinan</h3>
                 <span>Kandidat 2</span>
@@ -201,7 +201,7 @@ a[target='_blank'] {
             </a>
           </div>
           <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://www.instagram.com/jkva._/?hl=id" class="item-wrap fancybox">
+            <a href="#Link-drive-visimisiproker" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Evangeline A.K.</h3>
                 <span>Kandidat 3</span>
