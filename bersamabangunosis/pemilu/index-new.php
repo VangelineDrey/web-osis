@@ -183,30 +183,30 @@ a[target='_blank'] {
             <form method="POST" id="contactForm" name="contactForm" class="contactForm" action="">
         <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200" style = "margin-top: -50px;">
           <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="#Link-drive-visimisiproker" class="item-wrap fancybox">
+            <a href="https://drive.google.com/file/d/12xf1ExtYBgokH_qeNiZJkGxpnBIjtI4Z/view?usp=sharing" target="_blank" class="item-wrap fancybox">
               <div class="work-info">
-                <h3>Vincent Sutanto</h3>
+                <h3>Kenneth Davis</h3>
                 <span>Kandidat 1</span>
               </div>
-              <img class="img-fluid" src="../assets/kelompok/img/pincenn.png">
+              <img class="img-fluid" src="../assets/kelompok/img/kenneth.png">
             </a>
           </div>
           <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="#Link-drive-visimisiproker" class="item-wrap fancybox">
+            <a href="https://drive.google.com/file/d/1xacbebUNZ4wlEKCGozCgNv2rqOtVUvqI/view?usp=share_link" target="_blank" class="item-wrap fancybox">
               <div class="work-info">
-                <h3>Ferdinan</h3>
+                <h3>Sintia Putri Ramanda</h3>
                 <span>Kandidat 2</span>
               </div>
-              <img class="img-fluid" src="../assets/kelompok/img/ferdii.png">
+              <img class="img-fluid" src="../assets/kelompok/img/Sintia.png">
             </a>
           </div>
           <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="#Link-drive-visimisiproker" class="item-wrap fancybox">
+            <a href="https://drive.google.com/file/d/18nxwrAYFpsn_vA5JP4M-UO2egmEyLugQ/view?usp=share_link" target="_blank" class="item-wrap fancybox">
               <div class="work-info">
-                <h3>Evangeline A.K.</h3>
+                <h3>Vinca Oktavia</h3>
                 <span>Kandidat 3</span>
               </div>
-              <img class="img-fluid" src="../assets/kelompok/img/epaaa.png">
+              <img class="img-fluid" src="../assets/kelompok/img/Vinca.png">
             </a>
           </div>
         </div>
@@ -215,19 +215,19 @@ a[target='_blank'] {
             <div class="col-sm">
             <center>
                 <input type="radio" id="html" name="buhleidonea" value="1">
-                <label for="html"><h4>1 - Org 1</h4></label>
+                <label for="html"><h4>1 - Kenneth Davis</h4></label>
                 </center>
             </div>
             <div class="col-sm">
                 <center>
                 <input type="radio" id="css" name="buhleidonea" value="2">
-                <label for="css"><h4>2 - Org 2</h4></label>
+                <label for="css"><h4>2 - Sintia Putri Ramanda</h4></label>
                 </center>
             </div>
             <div class="col-sm">
                 <center>
                 <input type="radio" id="javascript" name="buhleidonea" value="3">
-                <label for="javascript"><h4>3 - Org 3</h4></label>
+                <label for="javascript"><h4>3 - Vinca Oktavia</h4></label>
                 </center>
             </div>
             <input type="hidden" name="timestamps" value="<?php echo $now;?>"/>
