@@ -29,6 +29,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../assets/images/oska.png" />
+
 	
 	<link rel="stylesheet" href="css/style.css">
     <style>
@@ -70,30 +72,46 @@
 
 	</head>
 	<body>
-        <div class="row">
-            <div class="column">
-                <img src="../assets/noprofile.jpg"/>
-                <img src="../assets/noprofile.jpg"/>
-                <img src="../assets/noprofile.jpg"/>
-            </div>
-        </div>
 	<section class="ftco-section">
-		<div class="container">
+		<div class="container" style = "margin-top: -50px;">
 			<div class="row justify-content-center">
 				<div class="col-md-12">
 					<div class="wrapper">
 						<div class="row no-gutters">
-							<div class="col-lg-6">
-								<div class="contact-wrap w-100 p-md-5 p-4">
-									<h3>Kandidat 1</h3>
-									<p class="mb-4">We're open for any suggestion or just to have a chat</p>
-									<div id="form-message-warning" class="mb-4"></div> 
-				      		<div id="form-message-success" class="mb-4">
-				            Your message was sent, thank you!
-				      		</div>
+							<div>
+                                    <center>
+									<h3>Pemilihan Ketua OSIS Masa Bakti 2022/2023</h3>
 									<form method="POST" id="contactForm" name="contactForm" class="contactForm" action="">
+                                    <div class="row" style="margin: auto;">
+                                    <div class="column mb-4" style="margin: auto;">
+                                        <img src="../assets/kelompok/img/ferdii.png" alt="Snow" style="width:100%">
+                                    </div>
+                                    <div class="column mb-4" style="margin: auto;">
+                                        <img src="../assets/kelompok/img/pincenn.png" alt="Forest" style="width:100%">
+                                    </div>
+                                    <div class="column mb-4" style="margin: auto;">
+                                        <img src="../assets/kelompok/img/reynald.png" alt="Mountains" style="width:100%">
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                            <input type="radio" id="html" name="buhleidonea" value="1">
+                                                                            <label for="html">1 - Vincent Sutanto</label>
+                                            </div>
+                                            <div class="col-sm">
+                                            <input type="radio" id="css" name="buhleidonea" value="2">
+                                                                            <label for="css">2 - Vinsen Su</label>
+                                            </div>
+                                            <div class="col-sm">
+                                            <input type="radio" id="javascript" name="buhleidonea" value="3">
+                                                                            <label for="javascript">3 - Vincen Susanto</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </center>
 										<input type="hidden" name="timestamps" value="<?php echo $now;?>"/>
-										<input type="hidden" name="buhleidonea" value="1"/>
 										<div class="row">
 											<div class="col-md-12">
 												<div class="form-group">
@@ -107,7 +125,7 @@
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<input type="submit" name="submit" value="Send Message" class="btn btn-primary">
+													<input type="submit" name="submit" value="Vote!" class="btn btn-primary">
 													<div class="submitting"></div>
 												</div>
 											</div>
@@ -115,10 +133,7 @@
 									</form>
 								</div>
 							</div>
-							<div class="col-lg-6 d-flex align-items-stretch">
-								<div class="info-wrap w-100 p-5 img" style="background-image: url(images/img.jpg);">
-			          </div>
-							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -130,7 +145,26 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
+    <script>
+        let slideIndex = 0;
+        showSlides();
 
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 	</body>
 </html>
-

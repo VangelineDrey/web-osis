@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/kelompok/img/favicon.png" rel="icon">
+  <link rel="shortcut icon" href="assets/images/oska.png" />
   <link href="assets/kelompok/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->

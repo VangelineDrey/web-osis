@@ -1,6 +1,9 @@
 <?php
 
 include 'functions.php';
+session_start();
+if(!isset($_SESSION["login"])){
+    header('location:../login/login.php'); exit;}
 
 $id=$_GET["id"];
 

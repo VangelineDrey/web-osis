@@ -1,5 +1,9 @@
 <?php
     require 'functions.php';
+    
+session_start();
+if(!isset($_SESSION["login"])){
+    header('location:../login/login.php'); exit;}
 
     if (isset($_POST["submit"])) { 
 
