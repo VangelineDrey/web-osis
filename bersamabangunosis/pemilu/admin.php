@@ -9,25 +9,32 @@ if ($mysqli -> connect_errno) {
   exit();
 }
 else{
-    echo "hello";
 }
 
-
-if($insert){
-//know total inserted records using mysqli_affected_rows
-print'Successfully inserted and Total '.$mysqli->affected_rows .' rows added.';
-}else{
-echo"Error: (".$mysqli->errno .") ".$mysqli->error;
-}
+// $query = "SELECT count(vote) FROM pemilu";      
+// $numrows = query($query);
+// echo $numrows[0];
     
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OSKA | Main Data</title>
-    <!-- Google Font: Source Sans Pro -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemilu 2022</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){    
+          loadstation();
+      });
+
+      function loadstation(){
+          $("#station_data").load("station.php");
+          setTimeout(loadstation, 2000);
+      }
+    </script>
     <link rel="shortcut icon" href="../assets/images/oska.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 
@@ -49,31 +56,9 @@ echo"Error: (".$mysqli->errno .") ".$mysqli->error;
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-    <style>
-      
-td, th {
-  border: 1px solid #ddd;
-  padding-right: 8px;
-  padding-left: 8px;
-}
-
-tr:nth-child(even){background-color: #f2f2f2;}
-
-tr:hover {background-color: #ddd;}
-
-th {
-  padding-bottom: 5px;
-  padding-top: 5px;
-  text-align: left;
-  background-color: rgba(64, 64, 64, 0.8);
-  color: white;
-}
-    </style>
 </head>
 <body>
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="#page-top">Admin Pemilu OSKA</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,7 +67,7 @@ th {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../admin/index.php">Main Data</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../admin/index.php">Dashboard</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../login/logout.php">Logout</a></li>
                     </ul>
                 </div>
@@ -92,5 +77,9 @@ th {
         <div class="container d-flex align-items-center flex-column">
           <div class="wrapper"><br><br><br><br><br>
     <!-- Content Header (Page header) -->
-
-    
+  
+  <div id = "station_data">
+  </div>
+<?php include "graph.php";?>
+</body>
+</html>

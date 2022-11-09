@@ -84,13 +84,13 @@
 									<form method="POST" id="contactForm" name="contactForm" class="contactForm" action="">
                                     <div class="row" style="margin: auto;">
                                     <div class="column mb-4" style="margin: auto;">
-                                        <img src="../assets/kelompok/img/ferdii.png" alt="Snow" style="width:100%">
+                                        <img src="../admin/images/kenneth.png" alt="Snow" style="width:100%">
                                     </div>
                                     <div class="column mb-4" style="margin: auto;">
-                                        <img src="../assets/kelompok/img/pincenn.png" alt="Forest" style="width:100%">
+                                        <img src="../admin/images/sintia.png" alt="Forest" style="width:100%">
                                     </div>
                                     <div class="column mb-4" style="margin: auto;">
-                                        <img src="../assets/kelompok/img/reynald.png" alt="Mountains" style="width:100%">
+                                        <img src="../admin/images/vinca.png" alt="Mountains" style="width:100%">
                                     </div>
                                     </div>
                                     
@@ -98,15 +98,15 @@
                                         <div class="row">
                                             <div class="col-sm">
                                             <input type="radio" id="html" name="buhleidonea" value="1">
-                                                                            <label for="html">1 - Vincent Sutanto</label>
+                                                                            <label for="html">1 - Kenneth Davis</label>
                                             </div>
                                             <div class="col-sm">
                                             <input type="radio" id="css" name="buhleidonea" value="2">
-                                                                            <label for="css">2 - Vinsen Su</label>
+                                                                            <label for="css">2 - Sintia Putri Ramanda</label>
                                             </div>
                                             <div class="col-sm">
                                             <input type="radio" id="javascript" name="buhleidonea" value="3">
-                                                                            <label for="javascript">3 - Vincen Susanto</label>
+                                                                            <label for="javascript">3 - Vinca Oktavia</label>
                                             </div>
                                         </div>
                                     </div>
