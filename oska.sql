@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 01, 2022 at 08:34 AM
+-- Generation Time: Nov 09, 2022 at 08:08 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -61,7 +61,7 @@ INSERT INTO `anggota` (`id`, `name`, `divisi`, `dob`, `words`, `akhirjabatan`, `
 (17, 'Sintia', 'Kesenian', '2022-10-21', 'tes', '2022-10-21', 'members63521c72ddd27.png'),
 (18, 'Edward', 'Jurnalistik', '2022-10-21', 'tes', '2022-10-21', 'members63521cab134fa.png'),
 (19, 'Rebeca', 'Jurnalistik', '2022-10-21', 'tes', '2022-10-21', 'members63521cd055c9c.png'),
-(20, 'Kenneth', 'Humas', '2022-10-21', 'tes', '2022-10-21', 'members63521cf756b2c.png'),
+(20, 'Kenneth', 'Humas', '2022-10-21', 'tes', '2022-10-21', ''),
 (21, 'ferdi', 'Kesenian', '2022-10-21', 'tes', '2022-10-21', 'members63522004af99c.jpg');
 
 -- --------------------------------------------------------
@@ -84,7 +84,7 @@ CREATE TABLE `artikel` (
 --
 
 INSERT INTO `artikel` (`id`, `title`, `tag`, `author`, `link`, `image`) VALUES
-(1, 'Upacara HUT RI Sekolah Cinta K', 'Event', 'Rebecca', 'https://smk.cintakasihtzuchi.sch.id/upacara-hut-ri-smk-tzu-chi-2022/', 'artikel63513163bc60a.png'),
+(1, 'Upacara HUT RI Sekolah Cinta K', 'Event', 'Rebecca', 'https://smk.cintakasihtzuchi.sch.id/upacara-hut-ri-smk-tzu-chi-2022/', 'artikel63521b39c8292.jpg'),
 (2, 'Lomba 17 Agustus-An SMK Cinta ', 'Event', 'Rebecca', 'https://smk.cintakasihtzuchi.sch.id/lomba-17-agustus-smk-tzu-chi-2022/', 'artikel63521b6f2b34b.jpg'),
 (3, 'Hari Pendidikan Nasional SMK C', 'Event', 'Vinsen Susanto', 'https://smk.cintakasihtzuchi.sch.id/hardiknas-smk-cinta-kasih-tzu-chi-2022/', 'artikel63521b9a2c2fb.jpg');
 
@@ -106,15 +106,15 @@ CREATE TABLE `divisi` (
 --
 
 INSERT INTO `divisi` (`id`, `name`, `shortdesc`, `image`) VALUES
-(1, 'Kesenian', 'Membuat poster', 'divisi635613e64f42a.png'),
-(2, 'Humas', 'Mengatur Konten Instagram', '1'),
-(3, 'Bendahara', 'Mengatur Keuangan', '1'),
-(4, 'Sekretaris', 'Membuat Recap Kerja Osis', '1'),
-(5, 'Sesi Agama', 'Mengatur keagamaan di SMK', '1'),
-(6, 'KWU', 'Mengatur dan mempromosikan penjualan snack  vegetarian', '1'),
-(7, 'Jurnalistik', 'Membuat artikel kegiatan yang ada di smk', '1'),
-(8, 'BIBEKA', 'Mengatur konten', '1'),
-(9, 'Dokumentasi', 'Mendokumentasikan setiap kegiatan', '1');
+(1, 'Kesenian', 'Membuat poster', 'team_kesenian.png'),
+(2, 'Humas', 'Mengatur Konten Instagram', 'team_kesenian.png'),
+(3, 'Bendahara', 'Mengatur Keuangan', 'team_kesenian.png'),
+(4, 'Sekretaris', 'Membuat Recap Kerja Osis', 'team_kesenian.png'),
+(5, 'Sesi Agama', 'Mengatur keagamaan di SMK', 'team_kesenian.png'),
+(6, 'KWU', 'Mengatur dan mempromosikan penjualan snack  vegetarian', 'team_kesenian.png'),
+(7, 'Jurnalistik', 'Membuat artikel kegiatan yang ada di smk', 'team_kesenian.png'),
+(8, 'BIBEKA', 'Mengatur konten', 'team_kesenian.png'),
+(9, 'Dokumentasi', 'Mendokumentasikan setiap kegiatan', 'team_kesenian.png');
 
 -- --------------------------------------------------------
 
@@ -149,6 +149,43 @@ CREATE TABLE `pemilu` (
 --
 
 INSERT INTO `pemilu` (`nik`, `name`, `timestamps`, `vote`, `changecount`) VALUES
+(0, 'tes', NULL, '2', NULL),
+(1, 'Edi Supeno', NULL, NULL, NULL),
+(2, 'Agus Salim', NULL, NULL, NULL),
+(3, 'Eduardus Laot', NULL, NULL, NULL),
+(4, 'Ernesta', NULL, NULL, NULL),
+(5, 'Eko Raharjo', NULL, NULL, NULL),
+(6, 'Saifulloh', NULL, NULL, NULL),
+(7, 'Bukhori', NULL, NULL, NULL),
+(8, 'Marji', NULL, NULL, NULL),
+(9, 'Novika', NULL, NULL, NULL),
+(10, 'Ruly', NULL, NULL, NULL),
+(11, 'Galih Yoga', NULL, NULL, NULL),
+(12, 'Mutiara Rini', NULL, NULL, NULL),
+(13, 'Adi Kristanto', NULL, NULL, NULL),
+(14, 'Mulyawan', NULL, NULL, NULL),
+(15, 'Junaidi', NULL, NULL, NULL),
+(16, 'Henny Kumala', NULL, NULL, NULL),
+(17, 'Iriwaty', NULL, NULL, NULL),
+(18, 'Maria Paskani', NULL, NULL, NULL),
+(19, 'Jefry Corpry Y H', NULL, NULL, NULL),
+(20, 'Yeci Mey Linda', NULL, NULL, NULL),
+(21, 'Yuli Hastuti', NULL, NULL, NULL),
+(22, 'Rudi Hartono', NULL, NULL, NULL),
+(23, 'Eka Inomiaty P', NULL, NULL, NULL),
+(24, 'Heru Iryanto', NULL, NULL, NULL),
+(25, 'Prima Wirawan', NULL, NULL, NULL),
+(26, 'Mashaji Rahmat', NULL, NULL, NULL),
+(27, 'Clay Marvelous Mone Ie', NULL, NULL, NULL),
+(28, 'Taruna Nasution', NULL, NULL, NULL),
+(29, 'Laurencia Tandiwijaya', NULL, NULL, NULL),
+(30, 'Mindawati Surbakti', NULL, NULL, NULL),
+(31, 'Dwi Aris N', NULL, NULL, NULL),
+(32, 'Nur Fajar Sidik', NULL, NULL, NULL),
+(33, 'Tussy Triandini', NULL, NULL, NULL),
+(34, 'Kristin Ambarita', NULL, NULL, NULL),
+(35, 'Margaretta', NULL, NULL, NULL),
+(36, 'Rizki Mulyadi', NULL, NULL, NULL),
 (1239, 'Ariel Susantio', NULL, NULL, NULL),
 (1270, 'Alvin Predinata', NULL, NULL, NULL),
 (1271, 'Angelanda', NULL, NULL, NULL),
@@ -245,7 +282,7 @@ INSERT INTO `pemilu` (`nik`, `name`, `timestamps`, `vote`, `changecount`) VALUES
 (1365, 'Steaven', NULL, NULL, NULL),
 (1366, 'Steven Sebastian', NULL, NULL, NULL),
 (1367, 'Timotius Avaro Andrelo Putra', NULL, NULL, NULL),
-(1368, 'Vincent Sutanto', NULL, NULL, NULL),
+(1368, 'Vincent Sutanto', '2022-11-01 14:39:45', '2', 1),
 (1369, 'William', NULL, NULL, NULL),
 (1370, 'Yehezkiel Natanael', NULL, NULL, NULL),
 (1371, 'Yoga Hose Tambunan', NULL, NULL, NULL),
