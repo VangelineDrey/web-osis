@@ -7,14 +7,14 @@
 
         if(vote($_POST) > 0){
             echo "<script>
-        alert('Data berhasil diubah');
-        document.location.href='index-new.php';
+        alert('Suara Berhasil Masuk');
+        document.location.href='index.php';
             </script>
             ";
             
         } else {echo "<script>
-            alert('Data gagal diubah(fileubah)');
-            document.location.href='index-new.php';
+            alert('Suara Invalid');
+            document.location.href='index.php';
                         </script>;";
         }
         }
@@ -70,10 +70,11 @@
     font-family: 'Poppins', sans-serif
 }
 
-body {
-    height: 100vh;
-    background: linear-gradient(to top, #c9c9ff 50%, #9090fa 90%) repeat;
-    padding-top: 0px;
+html, body {
+    height: 100%;
+    background: linear-gradient(to top, #c9c9ff 50%, #9090fa 90%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
@@ -167,6 +168,11 @@ a[target='_blank'] {
         left: 25%
     }
 }
+
+h2{
+    margin-top:5%;
+    text-align:center;
+}
 </style>
 
 </head>
@@ -175,13 +181,12 @@ a[target='_blank'] {
 
 
     <!-- ======= Works Section ======= -->
-    <section class="section site-portfolio">
-      <div class="container" style = "margin-top: -70px;">
-        <center>
-            <h2>Pemilihan Ketua OSIS Masa Bakti 2022/2023</h2>
-            </center><br><br><br>
+            <h2 style="">Pemilihan Ketua OSIS Masa Bakti 2022/2023</h2>
+    <section class="section site-portfolio" style="padding:0;">
+      <div class="container">
+            <div>
             <form method="POST" id="contactForm" name="contactForm" class="contactForm" action="">
-        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200" style = "margin-top: -50px;">
+        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
           <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
             <a href="https://drive.google.com/file/d/12xf1ExtYBgokH_qeNiZJkGxpnBIjtI4Z/view?usp=sharing" target="_blank" class="item-wrap fancybox">
               <div class="work-info">
@@ -210,7 +215,7 @@ a[target='_blank'] {
             </a>
           </div>
         </div>
-        <div class="container" style = "margin-top: -20px;">
+        <div class="container">
         <div class="row">
             <div class="col-sm">
             <center>
@@ -249,7 +254,7 @@ a[target='_blank'] {
 					    </div>
                     </div>
 					<div class="col-md-12">
-						<div class="form-group">
+						<div class="form-group" style="text-align:center">
 							<input type="submit" name="submit" value="Vote!" class="btn btn-primary">
 							<div class="submitting"></div>
 						</div>
@@ -259,6 +264,7 @@ a[target='_blank'] {
             </h5>
             </div>
             </form>
+</div>
       </div>
       </section>
 
