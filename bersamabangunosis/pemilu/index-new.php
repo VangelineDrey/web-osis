@@ -197,7 +197,7 @@ a[target='_blank'] {
                 <h3>Sintia Putri Ramanda</h3>
                 <span>Kandidat 2</span>
               </div>
-              <img class="img-fluid" src="../assets/kelompok/img/Sintia.png">
+              <img class="img-fluid" src="../assets/kelompok/img/Sintiaaa.png">
             </a>
           </div>
           <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
