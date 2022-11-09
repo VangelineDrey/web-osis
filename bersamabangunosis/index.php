@@ -88,7 +88,7 @@ include 'admin/functions.php';
                 <a class="nav-link" href="#keanggotaan">Keanggotaan</a>
               </li>
               <li class="nav-item @@Pemilu__active">
-                <a class="nav-link" href="pemilu/index-new.php">Pemilu</a>
+                <a class="nav-link" href="pemilu/index.php">Pemilu</a>
               </li>
             </ul>
     

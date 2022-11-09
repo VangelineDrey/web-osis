@@ -7,164 +7,287 @@
 
         if(vote($_POST) > 0){
             echo "<script>
-        alert('Data berhasil diubah');
+        alert('Suara Berhasil Masuk');
         document.location.href='index.php';
             </script>
             ";
             
         } else {echo "<script>
-            alert('Data gagal diubah(fileubah)');
+            alert('Suara Invalid');
             document.location.href='index.php';
                         </script>;";
         }
         }
 ?>
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-  	<title>Pemilu</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../assets/images/oska.png" />
+  <title>Pemilu OSIS 2022/2022</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-	
-	<link rel="stylesheet" href="css/style.css">
-    <style>
-        .row {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 4px;
-        }
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="../assets/images/oska.png" />
+  <link href="assets/kelompok/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-        /* Create four equal columns that sits next to each other */
-        .column {
-        flex: 25%;
-        max-width: 25%;
-        padding: 0 4px;
-        }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-        .column img {
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-        }
+  <!-- Vendor CSS Files -->
+  <link href="../assets/kelompok/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/kelompok/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/kelompok/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/kelompok/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media screen and (max-width: 800px) {
-        .column {
-            flex: 50%;
-            max-width: 50%;
-        }
-        }
+  <!-- Template Main CSS File -->
+  <link href="../assets/kelompok/css/style.css" rel="stylesheet">
 
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-        .column {
-            flex: 100%;
-            max-width: 100%;
-        }
-        }
-    </style>
+    <!-- space -->
+    <link rel="stylesheet" href="../assets-space/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets-space/css/templatemo-space-dynamic.css">
+    <link rel="stylesheet" href="../assets-space/css/animated.css">
+    <link rel="stylesheet" href="../assets-space/css/owl.css">
+    
+    <link href="//fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style-starter.css">
 
-	</head>
-	<body>
-	<section class="ftco-section">
-		<div class="container" style = "margin-top: -50px;">
-			<div class="row justify-content-center">
-				<div class="col-md-12">
-					<div class="wrapper">
-						<div class="row no-gutters">
-							<div>
-                                    <center>
-									<h3>Pemilihan Ketua OSIS Masa Bakti 2022/2023</h3>
-									<form method="POST" id="contactForm" name="contactForm" class="contactForm" action="">
-                                    <div class="row" style="margin: auto;">
-                                    <div class="column mb-4" style="margin: auto;">
-                                        <img src="../admin/images/kenneth.png" alt="Snow" style="width:100%">
-                                    </div>
-                                    <div class="column mb-4" style="margin: auto;">
-                                        <img src="../admin/images/sintia.png" alt="Forest" style="width:100%">
-                                    </div>
-                                    <div class="column mb-4" style="margin: auto;">
-                                        <img src="../admin/images/vinca.png" alt="Mountains" style="width:100%">
-                                    </div>
-                                    </div>
-                                    
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-sm">
-                                            <input type="radio" id="html" name="buhleidonea" value="1">
-                                                                            <label for="html">1 - Kenneth Davis</label>
-                                            </div>
-                                            <div class="col-sm">
-                                            <input type="radio" id="css" name="buhleidonea" value="2">
-                                                                            <label for="css">2 - Sintia Putri Ramanda</label>
-                                            </div>
-                                            <div class="col-sm">
-                                            <input type="radio" id="javascript" name="buhleidonea" value="3">
-                                                                            <label for="javascript">3 - Vinca Oktavia</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </center>
-										<input type="hidden" name="timestamps" value="<?php echo $now;?>"/>
-										<div class="row">
-											<div class="col-md-12">
-												<div class="form-group">
-													<input type="text" class="form-control" name="name" id="name" placeholder="Nama">
-												</div>
-											</div>
-											<div class="col-md-12"> 
-												<div class="form-group">
-													<input type="text" class="form-control" name="nik" id="nik" placeholder="NIK">
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<input type="submit" name="submit" value="Vote!" class="btn btn-primary">
-													<div class="submitting"></div>
-												</div>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-							
+  <!-- =======================================================
+  * Template Name: MyPortfolio - v4.9.1
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    * {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+html, body {
+    height: 100%;
+    background: linear-gradient(to top, #c9c9ff 50%, #9090fa 90%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    margin: 50px auto
+}
+
+.panel-heading {
+    text-align: center;
+    margin-bottom: 10px
+}
+
+#forgot {
+    min-width: 100px;
+    margin-left: auto;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.form-inline label {
+    padding-left: 10px;
+    margin: 0;
+    cursor: pointer
+}
+
+.btn.btn-primary {
+    margin-top: 20px;
+    border-radius: 15px
+}
+
+.panel {
+    min-height: 380px;
+    box-shadow: 20px 20px 80px rgb(218, 218, 218);
+    border-radius: 12px
+}
+
+.input-field {
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #4343ff
+}
+
+input[type='text'],
+input[type='password'] {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%
+}
+
+a[target='_blank'] {
+    position: relative;
+    transition: all 0.1s ease-in-out
+}
+
+.bordert {
+    border-top: 1px solid #aaa;
+    position: relative
+}
+
+.bordert:after {
+    content: "or connect with";
+    position: absolute;
+    top: -13px;
+    left: 33%;
+    background-color: #fff;
+    padding: 0px 8px
+}
+
+@media(max-width: 360px) {
+    #forgot {
+        margin-left: 0;
+        padding-top: 10px
+    }
+
+    body {
+        height: 100%
+    }
+
+    .container {
+        margin: 30px 0
+    }
+
+    .bordert:after {
+        left: 25%
+    }
+}
+
+h2{
+    margin-top:5%;
+    text-align:center;
+}
+</style>
+
+</head>
+
+<body>
+
+
+    <!-- ======= Works Section ======= -->
+            <h2 style="">Pemilihan Ketua OSIS Masa Bakti 2022/2023</h2>
+    <section class="section site-portfolio" style="padding:0;">
+      <div class="container">
+            <div>
+            <form method="POST" id="contactForm" name="contactForm" class="contactForm" action="">
+        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="https://drive.google.com/file/d/12xf1ExtYBgokH_qeNiZJkGxpnBIjtI4Z/view?usp=sharing" target="_blank" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Kenneth Davis</h3>
+                <span>Kandidat 1</span>
+              </div>
+              <img class="img-fluid" src="../admin/images/kenneth.png">
+            </a>
+          </div>
+          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="https://drive.google.com/file/d/1xacbebUNZ4wlEKCGozCgNv2rqOtVUvqI/view?usp=share_link" target="_blank" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Sintia Putri Ramanda</h3>
+                <span>Kandidat 2</span>
+              </div>
+              <img class="img-fluid" src="../admin/images/sintia.png">
+            </a>
+          </div>
+          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="https://drive.google.com/file/d/18nxwrAYFpsn_vA5JP4M-UO2egmEyLugQ/view?usp=share_link" target="_blank" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Vinca Oktavia</h3>
+                <span>Kandidat 3</span>
+              </div>
+              <img class="img-fluid" src="../admin/images/vinca.png">
+            </a>
+          </div>
+        </div>
+        <div class="container">
+        <div class="row">
+            <div class="col-sm">
+            <center>
+                <input type="radio" id="html" name="buhleidonea" value="1">
+                <label for="html"><h4>1 - Kenneth Davis</h4></label>
+                </center>
+            </div>
+            <div class="col-sm">
+                <center>
+                <input type="radio" id="css" name="buhleidonea" value="2">
+                <label for="css"><h4>2 - Sintia Putri Ramanda</h4></label>
+                </center>
+            </div>
+            <div class="col-sm">
+                <center>
+                <input type="radio" id="javascript" name="buhleidonea" value="3">
+                <label for="javascript"><h4>3 - Vinca Oktavia</h4></label>
+                </center>
+            </div>
+            <input type="hidden" name="timestamps" value="<?php echo $now;?>"/>
+            <h5>
+            <div class="panel-body p-3">
+				<div class="row"style = "margin-top: 10px;">
+					<div class="col-md-12">
+                        <div class="form-group py-2">
+                            <div class="input-field">
+						        <input type="text" class="form-control" name="name" id="name" placeholder="Nama">
+					        </div>
+                        </div>
+					</div>
+					<div class="col-md-12">
+                        <div class="form-group py-2">
+                            <div class="input-field">
+							    <input type="text" class="form-control" name="nik" id="nik" placeholder="NIK">
+						    </div>
+					    </div>
+                    </div>
+					<div class="col-md-12">
+						<div class="form-group" style="text-align:center">
+							<input type="submit" name="submit" value="Vote!" class="btn btn-primary">
+							<div class="submitting"></div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
+            </div>
+            </h5>
+            </div>
+            </form>
+</div>
+      </div>
+      </section>
 
-	<script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-    <script>
-        let slideIndex = 0;
-        showSlides();
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-        function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
-	</body>
+  <!-- Vendor JS Files -->
+  <script src="../assets/kelompok/vendor/aos/aos.js"></script>
+  <script src="../assets/kelompok/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/kelompok/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/kelompok/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/kelompok/vendor/php-email-form/validate.js"></script>
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="../assets-space/js/owl-carousel.js"></script>
+      <script src="../assets-space/js/animation.js"></script>
+      <script src="../assets-space/js/imagesloaded.js"></script>
+      <script src="../assets-space/js/templatemo-custom.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/kelompok/js/main.js"></script>
+
+</body>
+
 </html>
